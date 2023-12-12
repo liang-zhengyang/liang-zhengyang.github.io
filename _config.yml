@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Zhengyang Liang"
-  avatar           : "images\personal_photo.jpg"
+  avatar           : "./images/personal_photo.jpg"
   bio              : "Your biography for the left-hand sidebar"
   location         : "Location"
   employer         :
