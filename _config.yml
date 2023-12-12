@@ -11,7 +11,7 @@ title                    : "Zhengyang Liang"
 title_separator          : "-"
 name                     : &name "Zhengyang Liang"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://liang-zhengyang.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -31,14 +31,14 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
+  allowedFields          : ['Zhengyang Liang', '1ce@bupt.edu.cn', 'url', 'message']
   branch                 : "gh-pages" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
   path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  requiredFields         : ['Zhengyang Liang', '1ce@bupt.edu.cn', 'message']
   transforms:
     email                : "md5"
   generatedFields:
@@ -81,9 +81,9 @@ analytics:
 # Site Author
 author:
   name             : "Zhengyang Liang"
-  avatar           : "site-logo.png"
+  avatar           : "personal_photo.jpg"
   bio              : "An undergraduate student"
-  location         : "Beijing University of Posts and Telecommunications"
+  location         : "BUPT,Beijing,China"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
