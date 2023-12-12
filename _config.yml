@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Zhengyang Liang"
   avatar           : "personal_photo.jpg"
-  bio              : "An undergraduate student"
-  location         : "BUPT,Beijing,China"
+  bio              : "An undergraduate student from BUPT."
+  location         : "Beijing,China"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "http://yourfullgooglescholarurl.com"
