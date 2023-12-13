@@ -27,6 +27,6 @@ Technology
 Link
 ======
 
-[Report](../file/2022-ai-report.md)
+[Report](../file/2022-ai-report.pdf)
 
 [Code]()

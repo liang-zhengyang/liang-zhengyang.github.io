@@ -24,4 +24,4 @@ Technology
 
 Link
 ======
-[Paper](/publication/2023-aaai)
+[Paper](../publication/2023-aaai)
