@@ -1,11 +1,11 @@
 ---
-title: "Distributed System and Algorithm"
+title: "Multimodal model knowledge distillation"
 collection: projects
-type: "Course Project"
-permalink: /projects/DistributedSystem
-venue: "Fudan University, Department of Computer Science and Technology"
-date: 2018-12-1
-location: "Shanghai"
+type: "Research Project"
+permalink: /projects/knowledgedistillation
+venue: "Beijing Key Laboratory of Intelligent Telecommunication Software and Multimedia of BUPT"
+date: 2023-08-01
+location: "Beijing"
 ---
 
 Scalable all-pairs similarity search in metric space on distributed system; <br>
@@ -19,11 +19,10 @@ Main Work
 
 Technology
 ======
-* Language: Java
-* Rocks-Cluster
-* Hadoop && Spark
+* Language: Python
+* Pytorch
+* Knowledge distillation
 
 Link
 ======
-[Source Code](https://github.com/ChaokunChang/DistributedProject) <br>
-[Report](../files/MAPSSReport.pdf)
+[Paper(Writing in progress, expected to be submitted to ICME)]

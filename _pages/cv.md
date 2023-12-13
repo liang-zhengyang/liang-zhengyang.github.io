@@ -16,7 +16,7 @@ Education
 Work experience
 ======
 * 2023.03-2023.12: Research intern
-  * Beijing Key Laboratory of Intelligent Telecommunication Software and Multimedia of BUTP
+  * Beijing Key Laboratory of Intelligent Telecommunication Software and Multimedia of BUPT
   * Duties included: Design and implementation self-supervised Multi-grained Multi-modal Knowledge Graph Contrastive Hashing model for Cross-Modal Search
   * Supervisor: Prof.[Junping Du](https://scholar.google.com.sg/citations?user=p_blB4EAAAAJ&hl=en&oi=sra) and Prof.[Meiyu Liang](https://ieeexplore.ieee.org/author/37855140600).
 
