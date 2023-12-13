@@ -12,12 +12,14 @@ redirect_from:
 Education
 ======
 * B.S. in Beijing, Beijing University of Posts and Telecommunications, 2024 (expected)
+  - Major: Computer science and technology
 
 Work experience
 ======
 * 2023.03-2023.12: Research intern
   * Beijing Key Laboratory of Intelligent Telecommunication Software and Multimedia of BUPT
   * Duties included: Design and implementation self-supervised Multi-grained Multi-modal Knowledge Graph Contrastive Hashing model for Cross-Modal Search
+  * Paper published as student first author accepted by AAAI 2024.
   * Supervisor: Prof.[Junping Du](https://scholar.google.com.sg/citations?user=p_blB4EAAAAJ&hl=en&oi=sra) and Prof.[Meiyu Liang](https://ieeexplore.ieee.org/author/37855140600).
 
 Skills
@@ -26,10 +28,12 @@ Skills
   - C/C++
   - Python
 * Framework
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+  * Pytorch
+  * Flask
+  * QT
+* Familiar models
+  - CLIP
+  - Moco
 
 Publications
 ======
@@ -51,9 +55,12 @@ Contests
 
 Awards
 ======
-* **National Endeavor Scholarship** x 2
-* **"Lu Chuang" Scholarship**
-* **"Fan Hai" Scholar Award** (sponsored by OCEANWIDE HOLDINGS)
-* The **Second Prize of Country** in Mathematical Contest in Modeling of China
-* The **IBM HACKxFDU Innovation Award**
-* The excellent student and excellent league member of the evaluations in 2017
+* School Third Class Scholarship x 2
+* Honorable Mention of Mathematical Contest in Modeling of America
+* The second prize of China(First prize of Beijing) of Mathematical Contest in Modeling of China
+* School Innovation and Entrepreneurship Program Successful Completion Award
+
+Contact
+======
+
+* email:1ce@bupt.edu.cn
