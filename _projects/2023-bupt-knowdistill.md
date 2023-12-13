@@ -8,14 +8,12 @@ date: 2023-08-01
 location: "Beijing"
 ---
 
-Scalable all-pairs similarity search in metric space on distributed system; <br>
-Building Language Model based on Sougou Dataset. 
+Transferring Knowledge from Pre-trained Multimodal Large Models to Student Models via Knowledge Distillation.
 
 Main Work
 ======
-* Building rocks-cluster on 20 raw machines and configuring Hadoop and Spark.
-* Reproducing a paper, “Scalable All-Pairs Similarity Search in Metric Spaces”, and using Hierachical Clustering Method to compress the result.
-* Building a language model based on Sougou Dataset, and using smooth method to optimize it. 
+* Designing model frameworks and experiments and writing code to implement them.
+* Write paper.
 
 Technology
 ======
