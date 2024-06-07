@@ -14,6 +14,6 @@ citation: '**Zhengyang Liang**,Meiyu Liang,Wei Huang,Yawen Li,Zhe Xue. (2024).'
 
 **Main Work:**As first author, design frameword and lab, write code to implement the model.
 
-[Download paper here(Forthcoming)]()
+[Download paper here](https://arxiv.org/abs/2404.10838)
 
 Recommended citation: '**Zhengyang Liang**, Meiyu Liang, Wei Huang, Yawen Li, Zhe Xue. (2024).'
