@@ -18,9 +18,18 @@ Work experience
 ======
 * 2023.03-2023.12: Research intern
   * Beijing Key Laboratory of Intelligent Telecommunication Software and Multimedia of BUPT
-  * Duties included: Design and implementation self-supervised Multi-grained Multi-modal Knowledge Graph Contrastive Hashing model for Cross-Modal Search
+  * Duties included: Research and Design Multi-grained Cross-Modal Model
   * Paper published as student first author accepted by AAAI 2024.
   * Supervisor: Prof.[Junping Du](https://scholar.google.com.sg/citations?user=p_blB4EAAAAJ&hl=en&oi=sra) and Prof.[Meiyu Liang](https://ieeexplore.ieee.org/author/37855140600).
+
+* 2023.12-2024.03: Research intern
+  * Lenovo Research
+  * Duties included: Research and Design One-shot Talking Head Generation Model
+
+* 2023.12-2024.03: Research intern
+  * Beijing Academy of Artificial Intelligence
+  * Duties included: Research and Design Efficient Multimodal Large Language Model
+  * Supervisor: PI.[Bo Zhao](https://www.bozhao.me/)
 
 Skills
 ======
