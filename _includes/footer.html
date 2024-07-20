@@ -1,5 +1,20 @@
 {% include base_path %}
 
+<style>
+  #clustrmaps-container {
+      width: 150px;  /* 设置宽度 */
+      height: 100px; /* 设置高度 */
+      overflow: hidden; /* 隐藏溢出内容 */
+      position: relative;
+  }
+
+  #clustrmaps-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+  }
+</style>
+
 <div class="page__footer-follow">
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
@@ -21,6 +36,8 @@
   </ul>
 </div>
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=frWQdhUg8WOq7qBHJCZo4qiVPJQaS_6W5swIuB-FBoc"></script>
+<div id="clustrmaps-container">
+  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=frWQdhUg8WOq7qBHJCZo4qiVPJQaS_6W5swIuB-FBoc"></script>
+</div>
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
