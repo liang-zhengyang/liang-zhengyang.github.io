@@ -10,7 +10,7 @@ redirect_from:
 
 This is Zhengyang’s Homepage, welcome!
 
-Zhengyang Liang is currently an undergraduate student at SCS(School of Computer Science) Department, BUPT(Beijing University of Posts and Telecommunications).I am working on multimodal image-text retrieval models (e.g., CLIP), contrastive learning, knowledge distillation and model compression.
+Zhengyang Liang is currently working as a research intern at Beijing Academic of Artificial Intelligence, dedicated to exploring MLLM, video understanding and video moment retrieval. Before that, he got his bachelor's degree at SCS(School of Computer Science) Department, BUPT(Beijing University of Posts and Telecommunications).
 
 In my third year of undergrad, I joined the Beijing Key Laboratory of Intelligent Telecommunication Software and Multimedia of BUPT, supervised by Prof.[Junping Du](https://scholar.google.com.sg/citations?user=p_blB4EAAAAJ&hl=en&oi=sra) and Prof.[Meiyu Liang](https://ieeexplore.ieee.org/author/37855140600).
 

@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.S. in Beijing, Beijing University of Posts and Telecommunications, 2024 (expected)
+* B.S. in Beijing, Beijing University of Posts and Telecommunications, 2024
   - Major: Computer science and technology
 
 Work experience
@@ -21,6 +21,13 @@ Work experience
   * Duties included: Design and implementation self-supervised Multi-grained Multi-modal Knowledge Graph Contrastive Hashing model for Cross-Modal Search
   * Paper published as student first author accepted by AAAI 2024.
   * Supervisor: Prof.[Junping Du](https://scholar.google.com.sg/citations?user=p_blB4EAAAAJ&hl=en&oi=sra) and Prof.[Meiyu Liang](https://ieeexplore.ieee.org/author/37855140600).
+* 2023.12-2024.3: Research intern
+  * Lenovo Research
+  * Duties included: Talking head generation
+* 2024.3-Now: Research intern
+  * Beijing Academic of Artificial Intelligence, DCAI
+  * Duties included: MLLM, video understanding and video moment retrieval
+  * Supervisor: Doc.[Bo Zhao](https://www.bozhao.me/).
 
 Skills
 ======

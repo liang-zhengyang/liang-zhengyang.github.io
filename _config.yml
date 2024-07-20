@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Zhengyang Liang"
   avatar           : "personal_photo.jpg"
-  bio              : "An undergraduate student from BUPT."
+  bio              : "Stay foolish, stay hungry."
   location         : "Beijing,China"
   employer         :
   pubmed           : ""
-  googlescholar    : ""
+  googlescholar    : "https://scholar.google.com/citations?user=9IC8FBQAAAAJ&hl=zh-CN"
   email            :
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
