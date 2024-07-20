@@ -1,5 +1,33 @@
 <!-- start custom footer snippets -->
-<a href="/sitemap/">Sitemap</a>
+<!-- <a href="/sitemap/">Sitemap</a> -->
 <!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=frWQdhUg8WOq7qBHJCZo4qiVPJQaS_6W5swIuB-FBoc"></script> -->
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=frWQdhUg8WOq7qBHJCZo4qiVPJQaS_6W5swIuB-FBoc'></script>
+<!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=frWQdhUg8WOq7qBHJCZo4qiVPJQaS_6W5swIuB-FBoc'></script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClustrMaps Resize</title>
+    <style>
+        #clustrmaps-container {
+            width: 300px;  /* 设置宽度 */
+            height: 200px; /* 设置高度 */
+            overflow: hidden; /* 隐藏溢出内容 */
+            position: relative;
+        }
+
+        #clustrmaps-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="clustrmaps-container">
+        <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=frWQdhUg8WOq7qBHJCZo4qiVPJQaS_6W5swIuB-FBoc'></script>
+    </div>
+</body>
+</html>
+
 <!-- end custom footer snippets -->
