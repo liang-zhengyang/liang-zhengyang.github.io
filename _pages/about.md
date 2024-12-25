@@ -42,7 +42,7 @@ Yan Shu, Zheng Liu<sup>✉</sup>, Peitian Zhang, Minghao Qin, Junjie Zhou, <stro
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/mlvu.jpg' alt="sym" width="100%" height="60%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/mlvu.jpg' alt="sym" width="100%" height=200px></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MLVU: A Comprehensive Benchmark for Multi-Task Long Video Understanding](https://arxiv.org/abs/2406.04264)
