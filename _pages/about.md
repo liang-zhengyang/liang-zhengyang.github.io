@@ -86,11 +86,11 @@ Meiyu Liang, Junping Du<sup>✉</sup>, **Zhengyang Liang**, Yongwang Xing, Wei H
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 # 🎖 Honors and Awards
-- *2023* Honorable Mention of Mathematical Contest in Modeling of America
-- *2022* The second prize of China(First prize of Beijing) of Mathematical Contest in Modeling of China 
+- *2023*, Honorable Mention of Mathematical Contest in Modeling of America
+- *2022*, The second prize of China(First prize of Beijing) of Mathematical Contest in Modeling of China 
 
 # 📖 Educations
 - *2020.09 - 2024.07*, Bachelor, Beijing University of Posts and Telecommunications.
