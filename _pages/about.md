@@ -26,6 +26,7 @@ My research interest includes MLLM, self-supervised learning. <a href='https://s
 
 
 # 🔥 News
+- *2025.03*: &nbsp;🎉🎉 Three papers have accepted by CVPR 2025. Congratulations to all collaborators.
 - *2024.05*: &nbsp;🎉🎉 I joined Beijing Academic of Artificial Intelligence as a research intern.
 - *2024.07*: &nbsp;🎉🎉 I got my bachelor degree from Beijing University of Posts and Telecommunications.
 - *2023.12*: &nbsp;🎉🎉 I joined Lenovo Research as a research intern.
@@ -33,7 +34,7 @@ My research interest includes MLLM, self-supervised learning. <a href='https://s
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/videoxl.jpg' alt="sym" width="100%" ></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/videoxl.jpg' alt="sym" width="100%" ></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding](https://arxiv.org/abs/2409.14485)
@@ -44,7 +45,7 @@ Yan Shu, Zheng Liu<sup>✉</sup>, Peitian Zhang, Minghao Qin, Junjie Zhou, <stro
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/mlvu.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/mlvu.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MLVU: A Comprehensive Benchmark for Multi-Task Long Video Understanding](https://arxiv.org/abs/2406.04264)
@@ -55,7 +56,7 @@ Junjie Zhou<sup>*</sup>, Yan Shu<sup>*</sup>, Bo Zhao<sup>*</sup>, Boya Wu, <str
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv</div><img src='images/unveil2024.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2025</div><img src='images/unveil2024.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Unveiling the Ignorance of MLLMs: Seeing Clearly, Answering Incorrectly](https://arxiv.org/abs/2406.10638)
@@ -90,7 +91,7 @@ Meiyu Liang, Junping Du<sup>✉</sup>, **Zhengyang Liang**, Yongwang Xing, Wei H
 
 <!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
-# 🎖 Honors and Awards
+# 🥇 Honors and Awards
 - *2023*, Honorable Mention of Mathematical Contest in Modeling of America
 - *2022*, The second prize of China(First prize of Beijing) of Mathematical Contest in Modeling of China 
 
