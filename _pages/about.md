@@ -19,17 +19,18 @@ redirect_from:
 
 Zhengyang Liang is currently working as a research intern at Beijing Academic of Artificial Intelligence, supervised by PI.[Zheng Liu](https://scholar.google.com/citations?hl=zh-CN&user=k2SF4M0AAAAJ) and PI.[Bo Zhao](https://www.bozhao.me/). Dedicated to exploring Video MLLM. Before that, he got his bachelor's degree at Beijing University of Posts and Telecommunications, supervised by Prof.[Junping Du](https://scholar.google.com.sg/citations?user=p_blB4EAAAAJ&hl=en&oi=sra) and Prof.[Meiyu Liang](https://ieeexplore.ieee.org/author/37855140600).
 
-My research interest includes MLLM, self-supervised learning. <a href='https://scholar.google.com/citations?user=9IC8FBQAAAAJ'>google scholar citations <strong><span id='total_cit'>52</span></strong></a> 
+My research interest includes MLLM, self-supervised learning. <a href='https://scholar.google.com/citations?user=9IC8FBQAAAAJ'></a> 
 
 ✉️ Feel free to contact me with email: chr1ce@foxmail.com
 <!-- (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=9IC8FBQAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
 # 🔥 News
+- *2025.05*: &nbsp;🎉🎉 I will be going to SMU and will become a PhD student in August. Supervised by Prof.[Lizi Liao](https://liziliao.github.io/).
 - *2025.03*: &nbsp;🎉🎉 Three papers have accepted by CVPR 2025. Congratulations to all collaborators.
-- *2024.05*: &nbsp;🎉🎉 I joined Beijing Academic of Artificial Intelligence as a research intern.
-- *2024.07*: &nbsp;🎉🎉 I got my bachelor degree from Beijing University of Posts and Telecommunications.
-- *2023.12*: &nbsp;🎉🎉 I joined Lenovo Research as a research intern.
+- *2024.05*: &nbsp; I joined Beijing Academic of Artificial Intelligence as a research intern.
+- *2024.07*: &nbsp; I got my bachelor degree from Beijing University of Posts and Telecommunications.
+- *2023.12*: &nbsp; I joined Lenovo Research as a research intern.
 
 
 # 📝 Publications 
