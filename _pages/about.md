@@ -84,7 +84,7 @@ Yexin Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yueze Wang,
 
 [Self-Supervised Multi-Modal Knowledge Graph Contrastive Hashing for Cross-Modal Search](https://ojs.aaai.org/index.php/AAAI/article/view/29280)
 
-Meiyu Liang, Junping Du<sup>✉</sup>, **Zhengyang Liang**, Yongwang Xing, Wei Huang, Zhe Xue
+Meiyu Liang, Junping Du<sup>✉</sup>, **Zhengyang Liang**, Yongwang Xing, Wei Huang, Zhe Xue (Finished as first student author)
 
 [**Paper**](https://ojs.aaai.org/index.php/AAAI/article/view/29280) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
@@ -98,11 +98,12 @@ Meiyu Liang, Junping Du<sup>✉</sup>, **Zhengyang Liang**, Yongwang Xing, Wei H
 
 # 📖 Educations
 - *2020.09 - 2024.07*, Bachelor, Beijing University of Posts and Telecommunications.
+- *2025.08 - Now*, Ph.D, Singapore Management University.
 
 <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Internships
-- *2024.05 - Now*, [Beijing Academic of Artificial Intelligence](https://www.baai.ac.cn/), Beijing.
+- *2024.05 - 2025.05*, [Beijing Academic of Artificial Intelligence](https://www.baai.ac.cn/), Beijing.
 - *2023.12 - 2024.04*, [Lenovo Research](https://research.lenovo.com/webapp/view/index.html), Beijing.
