@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Zhengyang Liang is currently working as a research intern at Beijing Academic of Artificial Intelligence, supervised by PI.[Zheng Liu](https://scholar.google.com/citations?hl=zh-CN&user=k2SF4M0AAAAJ) and PI.[Bo Zhao](https://www.bozhao.me/). Dedicated to exploring Video MLLM. Before that, he got his bachelor's degree at Beijing University of Posts and Telecommunications, supervised by Prof.[Junping Du](https://scholar.google.com.sg/citations?user=p_blB4EAAAAJ&hl=en&oi=sra) and Prof.[Meiyu Liang](https://ieeexplore.ieee.org/author/37855140600).
+Zhengyang Liang is currently first-year PhD at Singapore Management University, supervised by Prof.[Lizi Liao](https://liziliao.github.io/).I used to work as a research intern at Beijing Academic of Artificial Intelligence, supervised by PI.[Zheng Liu](https://scholar.google.com/citations?hl=zh-CN&user=k2SF4M0AAAAJ) and PI.[Bo Zhao](https://www.bozhao.me/). Dedicated to exploring Video MLLM. Before that, he got his bachelor's degree at Beijing University of Posts and Telecommunications.
 
 My research interest includes MLLM, self-supervised learning. <a href='https://scholar.google.com/citations?user=9IC8FBQAAAAJ'></a> 
 
