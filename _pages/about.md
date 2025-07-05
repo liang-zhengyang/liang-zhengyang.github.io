@@ -36,7 +36,7 @@ My research interest includes MLLM, self-supervised learning. <a href='https://s
 
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/videoxl.jpg' alt="sym" ></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/videoxl2.png' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification](https://arxiv.org/abs/2506.19225)
@@ -47,7 +47,7 @@ Minghao Qin<sup>*</sup>, Xiangrui Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">ACL 2025</div><img src='images/videoxl.jpg' alt="sym" width="100%" ></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">ACL 2025</div><img src='images/visir.png' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Any Information Is Just Worth One Single Screenshot: Unifying Search With Visualized Information Retrieval](https://arxiv.org/abs/2502.11431)
@@ -58,7 +58,7 @@ Ze Liu, <strong>Zhengyang Liang</strong>, Junjie Zhou, Zheng Liu<sup>✉</sup>, 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">CVPR 2025(Oral)</div><img src='images/videoxl.jpg' alt="sym" width="100%" ></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">CVPR 2025(Oral)</div><img src='images/videoxl.jpg' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding](https://arxiv.org/abs/2409.14485)
@@ -69,7 +69,7 @@ Yan Shu, Zheng Liu<sup>✉</sup>, Peitian Zhang, Minghao Qin, Junjie Zhou, <stro
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">CVPR 2025</div><img src='images/mlvu.jpg' alt="sym"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">CVPR 2025</div><img src='images/mlvu.jpg' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MLVU: A Comprehensive Benchmark for Multi-Task Long Video Understanding](https://arxiv.org/abs/2406.04264)
@@ -80,7 +80,7 @@ Junjie Zhou<sup>*</sup>, Yan Shu<sup>*</sup>, Bo Zhao<sup>*</sup>, Boya Wu, <str
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">CVPR 2025</div><img src='images/unveil2024.jpg' alt="sym"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">CVPR 2025</div><img src='images/unveil2024.jpg' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Unveiling the Ignorance of MLLMs: Seeing Clearly, Answering Incorrectly](https://arxiv.org/abs/2406.10638)
@@ -91,7 +91,7 @@ Yexin Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yueze Wang,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">ACMMM 2025</div><img src='images/dsmd.jpg' alt="sym"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">ACMMM 2025</div><img src='images/dsmd.jpg' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Dynamic Self-adaptive Multiscale Distillation from Pre-trained Multimodal Large Model for Efficient Cross-modal Representation Learning](https://arxiv.org/abs/2404.10838)
@@ -102,7 +102,7 @@ Yexin Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yueze Wang,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">AAAI 2023</div><img src='images/cmgch.jpg' alt="sym"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">AAAI 2023</div><img src='images/cmgch.jpg' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Self-Supervised Multi-Modal Knowledge Graph Contrastive Hashing for Cross-Modal Search](https://ojs.aaai.org/index.php/AAAI/article/view/29280)
