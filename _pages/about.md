@@ -26,16 +26,39 @@ My research interest includes MLLM, self-supervised learning. <a href='https://s
 
 
 # 🔥 News
+- *2025.07*: &nbsp;🎉🎉 One paper accepted by ACMMM 2025.
+- *2025.06*: &nbsp;🎉🎉 Video-XL-2 is released, try it on [Video-XL-2](https://unabletousegit.github.io/video-xl2.github.io/).
 - *2025.05*: &nbsp;🎉🎉 I will be going to SMU and will become a PhD student in August. Supervised by Prof.[Lizi Liao](https://liziliao.github.io/).
-- *2025.03*: &nbsp;🎉🎉 Three papers have accepted by CVPR 2025. Congratulations to all collaborators.
+- *2025.03*: &nbsp; Three papers have accepted by CVPR 2025. Congratulations to all collaborators.
 - *2024.05*: &nbsp; I joined Beijing Academic of Artificial Intelligence as a research intern.
 - *2024.07*: &nbsp; I got my bachelor degree from Beijing University of Posts and Telecommunications.
 - *2023.12*: &nbsp; I joined Lenovo Research as a research intern.
 
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/videoxl.jpg' alt="sym" width="100%" ></div></div>
+<div class='paper-box-text' markdown="1">
 
-<div class='paper-box'><div class='paper-box-image'><div style="height: 150px; overflow: hidden;"><div class="badge">CVPR 2025</div><img src='images/videoxl.jpg' alt="sym" width="100%" ></div></div>
+[Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification](https://arxiv.org/abs/2506.19225)
+
+Minghao Qin<sup>*</sup>, Xiangrui Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yan Shu, Huaying Yuan, Juenjie Zhou, Shitao Xiao, Bo Zhao, Zheng Liu<sup>✉</sup>
+
+[**Paper**](https://arxiv.org/abs/2506.19225)|[**HomePage**](https://unabletousegit.github.io/video-xl2.github.io/)[**Code**](https://github.com/VectorSpaceLab/Video-XL)[**Model**](https://huggingface.co/BAAI/Video-XL-2) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">ACL 2025</div><img src='images/videoxl.jpg' alt="sym" width="100%" ></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Any Information Is Just Worth One Single Screenshot: Unifying Search With Visualized Information Retrieval](https://arxiv.org/abs/2502.11431)
+
+Ze Liu, <strong>Zhengyang Liang</strong>, Junjie Zhou, Zheng Liu<sup>✉</sup>, Defu Lian
+
+[**Paper**](https://arxiv.org/abs/2502.11431)|[**Code**](https://github.com/VectorSpaceLab/Vis-IR)[**Model**](https://huggingface.co/BAAI/BGE-VL-Screenshot)[**Data**](https://huggingface.co/datasets/marsh123/VIRA) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">CVPR 2025(Oral)</div><img src='images/videoxl.jpg' alt="sym" width="100%" ></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding](https://arxiv.org/abs/2409.14485)
@@ -46,7 +69,7 @@ Yan Shu, Zheng Liu<sup>✉</sup>, Peitian Zhang, Minghao Qin, Junjie Zhou, <stro
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div style="height: 150px; overflow: hidden;"><div class="badge">CVPR 2025</div><img src='images/mlvu.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">CVPR 2025</div><img src='images/mlvu.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [MLVU: A Comprehensive Benchmark for Multi-Task Long Video Understanding](https://arxiv.org/abs/2406.04264)
@@ -57,7 +80,7 @@ Junjie Zhou<sup>*</sup>, Yan Shu<sup>*</sup>, Bo Zhao<sup>*</sup>, Boya Wu, <str
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div style="height: 150px; overflow: hidden;"><div class="badge">CVPR 2025</div><img src='images/unveil2024.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">CVPR 2025</div><img src='images/unveil2024.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Unveiling the Ignorance of MLLMs: Seeing Clearly, Answering Incorrectly](https://arxiv.org/abs/2406.10638)
@@ -68,7 +91,7 @@ Yexin Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yueze Wang,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div style="height: 150px; overflow: hidden;"><div class="badge">Arxiv</div><img src='images/dsmd.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">ACMMM 2025</div><img src='images/dsmd.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Dynamic Self-adaptive Multiscale Distillation from Pre-trained Multimodal Large Model for Efficient Cross-modal Representation Learning](https://arxiv.org/abs/2404.10838)
@@ -79,7 +102,7 @@ Yexin Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yueze Wang,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div style="height: 150px; overflow: hidden;"><div class="badge">AAAI 2023</div><img src='images/cmgch.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">AAAI 2023</div><img src='images/cmgch.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Self-Supervised Multi-Modal Knowledge Graph Contrastive Hashing for Cross-Modal Search](https://ojs.aaai.org/index.php/AAAI/article/view/29280)
