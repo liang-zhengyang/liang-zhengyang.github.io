@@ -53,7 +53,7 @@
     .paper-box-image{
         justify-content: center;
         display: flex;
-        width: 100%;
+        flex: 0 0 auto;
         order: 2;
         img {
             height: 150px; /* Adjust as needed for desired consistent height */
@@ -62,7 +62,7 @@
     }
     
     .paper-box-text{
-        max-width: 100%;
+        flex: 1 1 auto;
         order: 1;
     }
     
@@ -76,7 +76,7 @@
         
         .paper-box-text{
             justify-content: left;
-            width: calc(100% - 210px);
+            flex-grow: 1;
             order: 2;
         }
 
