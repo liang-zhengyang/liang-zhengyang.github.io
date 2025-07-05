@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Zhengyang Liang"
-description              : "Zhengyang Liang's Homepage"
+title                    : "Zhengyang Liang|梁正阳"
+description              : "Zhengyang Liang's Homepage|梁正阳的主页"
 repository               : "liang-zhengyang/liang-zhengyang.github.io"
 google_scholar_stats_use_cdn : true
 
