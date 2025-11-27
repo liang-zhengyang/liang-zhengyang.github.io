@@ -37,7 +37,7 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href='https://
 
 
 # 📝 Publications 
-<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/videoxl2.png' alt="sym" width="200px" height="150px"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/univa.png' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [UniVA: Universal Video Agent towards Open-Source Next-Generation Video Generalist
@@ -49,7 +49,7 @@ Zhengyang Liang<sup>*</sup>, Daoan Zhang<sup>*</sup>, Huichi Zhou, Rui Huang, Bo
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/videoxl2.png' alt="sym" width="200px" height="150px"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/timescope.png' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [TimeScope: Towards Task-Oriented Temporal Grounding In Long Videos](https://arxiv.org/abs/2509.26360)
