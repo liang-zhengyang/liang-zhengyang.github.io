@@ -19,16 +19,17 @@ redirect_from:
 
 Zhengyang Liang is currently first-year PhD at Singapore Management University, supervised by Prof.[Lizi Liao](https://liziliao.github.io/).I used to work as a research intern at Beijing Academic of Artificial Intelligence, supervised by PI.[Zheng Liu](https://scholar.google.com/citations?hl=zh-CN&user=k2SF4M0AAAAJ) and PI.[Bo Zhao](https://www.bozhao.me/). Dedicated to exploring Video MLLM. Before that, I got my bachelor's degree at Beijing University of Posts and Telecommunications.
 
-My research interest includes MLLM, self-supervised learning. <a href='https://scholar.google.com/citations?user=9IC8FBQAAAAJ'></a> 
+My research interest includes MLLM, Video LLM and Video Agent. <a href='https://scholar.google.com/citations?user=9IC8FBQAAAAJ'></a> 
 
 ✉️ Feel free to contact me with email: chr1ce@foxmail.com
 <!-- (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=9IC8FBQAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
 # 🔥 News
+- *2025.11*: &nbsp;🎉🎉 We released UniVA, an open-source universal video agent. Try it on [UniVA](https://univa.online).
 - *2025.07*: &nbsp;🎉🎉 One paper accepted by ACMMM 2025.
 - *2025.06*: &nbsp;🎉🎉 Video-XL-2 is released, try it on [Video-XL-2](https://unabletousegit.github.io/video-xl2.github.io/).
-- *2025.05*: &nbsp;🎉🎉 I will be going to SMU and will become a PhD student in August. Supervised by Prof.[Lizi Liao](https://liziliao.github.io/).
+- *2025.05*: &nbsp; I will start my PhD journey in SMU at August. Supervised by Prof.[Lizi Liao](https://liziliao.github.io/).
 - *2025.03*: &nbsp; Three papers have accepted by CVPR 2025. Congratulations to all collaborators.
 - *2024.05*: &nbsp; I joined Beijing Academic of Artificial Intelligence as a research intern.
 - *2024.07*: &nbsp; I got my bachelor degree from Beijing University of Posts and Telecommunications.
@@ -36,6 +37,29 @@ My research interest includes MLLM, self-supervised learning. <a href='https://s
 
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/videoxl2.png' alt="sym" width="200px" height="150px"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[UniVA: Universal Video Agent towards Open-Source Next-Generation Video Generalist
+](https://arxiv.org/abs/2511.08521)
+
+Zhengyang Liang<sup>*</sup>, Daoan Zhang<sup>*</sup>, Huichi Zhou, Rui Huang, Bobo Li, Yuechen Zhang, Shengqiong Wu, Xiaohan Wang, Jiebo Luo, Lizi Liao, Hao Fei
+
+[**Paper**](https://arxiv.org/abs/2511.08521)|[**HomePage**](https://univa.online)|[**Code**](https://github.com/univa-agent/univa)|[**Benchmark**](https://huggingface.co/datasets/chr1ce/UniVA-Bench) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/videoxl2.png' alt="sym" width="200px" height="150px"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[TimeScope: Towards Task-Oriented Temporal Grounding In Long Videos](https://arxiv.org/abs/2509.26360)
+
+Xiangrui Liu<sup>*</sup>, Minghao Qin<sup>*</sup>, Yan Shu, Zhengyang Liang, Yang Tian, Chen Jason Zhang, Bo Zhao, Zheng Liu
+
+[**Paper**](https://arxiv.org/abs/2509.26360) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/videoxl2.png' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -120,8 +144,8 @@ Meiyu Liang, Junping Du<sup>✉</sup>, **Zhengyang Liang**, Yongwang Xing, Wei H
 - *2022*, The second prize of China(First prize of Beijing) of Mathematical Contest in Modeling of China 
 
 # 📖 Educations
-- *2020.09 - 2024.07*, Bachelor, Beijing University of Posts and Telecommunications.
 - *2025.08 - Now*, Ph.D, Singapore Management University.
+- *2020.09 - 2024.07*, Bachelor, Beijing University of Posts and Telecommunications.
 
 <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
