@@ -43,7 +43,7 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href='https://
 [UniVA: Universal Video Agent towards Open-Source Next-Generation Video Generalist
 ](https://arxiv.org/abs/2511.08521)
 
-Zhengyang Liang<sup>*</sup>, Daoan Zhang<sup>*</sup>, Huichi Zhou, Rui Huang, Bobo Li, Yuechen Zhang, Shengqiong Wu, Xiaohan Wang, Jiebo Luo, Lizi Liao, Hao Fei
+<strong>Zhengyang Liang<sup>*</sup></strong>, Daoan Zhang<sup>*</sup>, Huichi Zhou, Rui Huang, Bobo Li, Yuechen Zhang, Shengqiong Wu, Xiaohan Wang, Jiebo Luo, Lizi Liao, Hao Fei<sup>✉</sup>
 
 [**Paper**](https://arxiv.org/abs/2511.08521)|[**HomePage**](https://univa.online)|[**Code**](https://github.com/univa-agent/univa)|[**Benchmark**](https://huggingface.co/datasets/chr1ce/UniVA-Bench) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
@@ -54,7 +54,7 @@ Zhengyang Liang<sup>*</sup>, Daoan Zhang<sup>*</sup>, Huichi Zhou, Rui Huang, Bo
 
 [TimeScope: Towards Task-Oriented Temporal Grounding In Long Videos](https://arxiv.org/abs/2509.26360)
 
-Xiangrui Liu<sup>*</sup>, Minghao Qin<sup>*</sup>, Yan Shu, Zhengyang Liang, Yang Tian, Chen Jason Zhang, Bo Zhao, Zheng Liu
+Xiangrui Liu<sup>*</sup>, Minghao Qin<sup>*</sup>, Yan Shu, <strong>Zhengyang Liang</strong>, Yang Tian, Chen Jason Zhang, Bo Zhao, Zheng Liu<sup>✉</sup>
 
 [**Paper**](https://arxiv.org/abs/2509.26360) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
