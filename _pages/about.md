@@ -26,6 +26,7 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href='https://
 
 
 # 🔥 News
+- *2025.12*: &nbsp;🎉🎉 We have launched the first open-web video search benchmark: [Video-Browsecomp](https://liang-zhengyang.github.io/video-browsecomp/).
 - *2025.11*: &nbsp;🎉🎉 We released UniVA, an open-source universal video agent. Try it on [UniVA](https://univa.online).
 - *2025.07*: &nbsp;🎉🎉 One paper accepted by ACMMM 2025.
 - *2025.06*: &nbsp;🎉🎉 Video-XL-2 is released, try it on [Video-XL-2](https://unabletousegit.github.io/video-xl2.github.io/).
@@ -37,6 +38,19 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href='https://
 
 
 # 📝 Publications 
+<div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/level1_qa.png' alt="sym" width="200px" height="150px"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Video-BrowseComp: Benchmarking Agentic Video Research on Open Web
+](https://arxiv.org/abs/2512.23044)
+
+<strong>Zhengyang Liang<sup>*</sup></strong>, Yan Shu<sup>*</sup>, Xiangrui Liu, Minghao Qin, Kaixin Liang, Paolo Rota, Nicu Sebe, Zheng Liu, Lizi Liao<sup>✉</sup>
+
+[**Paper**](https://arxiv.org/abs/2512.23044)|[**HomePage**](https://liang-zhengyang.github.io/video-browsecomp/)|[**Benchmark**](https://huggingface.co/datasets/chr1ce/Video-Browsecomp) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/univa.png' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
