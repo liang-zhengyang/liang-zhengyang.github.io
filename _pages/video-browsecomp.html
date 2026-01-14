@@ -208,38 +208,71 @@ permalink: /video-browsecomp/
         </div>
     </section>
 
+    <section id="examples">
+        <h2>Examples</h2>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="/images/videobc_cases.jpg" alt="Video-BrowseComp Examples" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <p style="font-size: 0.9em; color: #666; margin-top: 10px;">Figure 1: Examples of questions and tasks in Video-BrowseComp.</p>
+        </div>
+    </section>
+
+    <section id="statistics">
+        <h2>Dataset Statistics</h2>
+        <div style="text-align: center; margin: 20px 0;">
+            <img src="/images/videobc_statics.jpg" alt="Video-BrowseComp Statistics" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <p style="font-size: 0.9em; color: #666; margin-top: 10px;">Figure 2: Distribution of video categories and difficulty levels.</p>
+        </div>
+    </section>
+
     <section id="leaderboard">
         <h2>Leaderboard</h2>
         <p>We evaluate state-of-the-art models on Video-BrowseComp. The accuracy (%) is reported for Overall (OA) and three difficulty levels (Level 1, Level 2, Level 3).</p>
+        
+        <!-- Interactive Controls Style -->
+        <style>
+            .filter-controls { margin-bottom: 20px; text-align: left; }
+            .filter-btn {
+                background-color: #f8f9fa;
+                border: 1px solid #ddd;
+                padding: 8px 16px;
+                margin-right: 8px;
+                border-radius: 20px;
+                cursor: pointer;
+                font-size: 0.9em;
+                transition: all 0.2s;
+            }
+            .filter-btn:hover { background-color: #e2e6ea; }
+            .filter-btn.active {
+                background-color: var(--primary-color);
+                color: white;
+                border-color: var(--primary-color);
+            }
+            .sortable { cursor: pointer; user-select: none; }
+            .sortable:hover { background-color: rgba(0,0,0,0.05); }
+            .sort-icon { display: inline-block; width: 15px; margin-left: 5px; text-align: center; }
+        </style>
+
+        <div class="filter-controls">
+            <span style="font-weight: bold; margin-right: 10px;">Filter:</span>
+            <button class="filter-btn active" onclick="filterData('All')">All</button>
+            <button class="filter-btn" onclick="filterData('Tool-Free')">Tool-Free</button>
+            <button class="filter-btn" onclick="filterData('Search')">Search Models</button>
+        </div>
         
         <div class="leaderboard-container">
             <table class="leaderboard-table">
                 <thead>
                     <tr>
-                        <th>Model</th>
-                        <th>Overall Acc (%)</th>
-                        <th>Level 1 (%)</th>
-                        <th>Level 2 (%)</th>
-                        <th>Level 3 (%)</th>
-                        <th>Calibration Error (%)</th>
+                        <th class="sortable" onclick="sortData('name')">Model <span id="sort-name" class="sort-icon"></span></th>
+                        <th class="sortable" onclick="sortData('oa')">Overall Acc (%) <span id="sort-oa" class="sort-icon"></span></th>
+                        <th class="sortable" onclick="sortData('l1')">Level 1 (%) <span id="sort-l1" class="sort-icon"></span></th>
+                        <th class="sortable" onclick="sortData('l2')">Level 2 (%) <span id="sort-l2" class="sort-icon"></span></th>
+                        <th class="sortable" onclick="sortData('l3')">Level 3 (%) <span id="sort-l3" class="sort-icon"></span></th>
+                        <th class="sortable" onclick="sortData('ce')">Calibration Error (%) <span id="sort-ce" class="sort-icon"></span></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr class="category-header"><td colspan="6">Tool-Free Models</td></tr>
-                    <tr><td>Qwen3-VL-8B-Thinking</td><td>7.14</td><td>12.00</td><td>0.00</td><td>0.00</td><td>52.49</td></tr>
-                    <tr><td>Qwen3-VL-235B-A22B-Instruct</td><td>13.33</td><td>22.40</td><td>0.00</td><td>0.00</td><td>77.64</td></tr>
-                    <tr><td>GLM-4.6V</td><td>10.95</td><td>16.80</td><td>3.23</td><td>0.00</td><td>44.40</td></tr>
-                    <tr><td>gpt-4o-2024-11-20</td><td>17.62</td><td>28.00</td><td>3.23</td><td>0.00</td><td>58.81</td></tr>
-                    <tr><td>gpt-4o-mini-2024-07-18</td><td>9.52</td><td>16.00</td><td>0.00</td><td>0.00</td><td>63.55</td></tr>
-                    <tr><td>gpt-5-mini-2025-08-07</td><td>15.71</td><td>26.40</td><td>0.00</td><td>0.00</td><td>37.47</td></tr>
-                    <tr><td>gemini-2.5-flash-2025-06</td><td>16.67</td><td>27.20</td><td>1.61</td><td>0.00</td><td>77.79</td></tr>
-                    <tr><td>gemini-2.5-pro-2025-06</td><td>19.52</td><td>31.20</td><td>3.23</td><td>0.00</td><td>79.18</td></tr>
-                    
-                    <tr class="category-header"><td colspan="6">Search Models</td></tr>
-                    <tr><td>gemini-2.5-flash-2025-06 (w/ Search)</td><td>20.95</td><td>32.80</td><td>4.84</td><td>0.00</td><td>35.98</td></tr>
-                    <tr><td>gemini-2.5-pro-2025-06 (w/ Search)</td><td><span class="best-score">23.81</span></td><td><span class="best-score">37.60</span></td><td>4.84</td><td>0.00</td><td>31.45</td></tr>
-                    <tr><td>gpt-5.1-2025-11-13 (w/ Search)</td><td>15.24</td><td>21.60</td><td>6.45</td><td>4.35</td><td><span class="best-score">30.20</span></td></tr>
-                    <tr><td>o4-mini-deep-research-2025-06-26</td><td>22.86</td><td>30.40</td><td><span class="best-score">12.90</span></td><td><span class="best-score">8.70</span></td><td>42.55</td></tr>
+                <tbody id="leaderboard-body">
+                    <!-- Rows will be populated by JavaScript -->
                 </tbody>
             </table>
         </div>
@@ -264,12 +297,133 @@ permalink: /video-browsecomp/
 </div>
 
 <script>
-    // Example of JS code: Log a message when a button is clicked
-    document.querySelectorAll('.btn').forEach(button => {
-        button.addEventListener('click', () => {
-            console.log('Button clicked: ' + button.innerText);
+    // Data definition
+    const leaderboardData = [
+        // Tool-Free Models
+        { name: "Qwen3-VL-8B-Thinking", type: "Tool-Free", oa: 7.14, l1: 12.00, l2: 0.00, l3: 0.00, ce: 52.49 },
+        { name: "Qwen3-VL-235B-A22B-Instruct", type: "Tool-Free", oa: 13.33, l1: 22.40, l2: 0.00, l3: 0.00, ce: 77.64 },
+        { name: "GLM-4.6V", type: "Tool-Free", oa: 10.95, l1: 16.80, l2: 3.23, l3: 0.00, ce: 44.40 },
+        { name: "gpt-4o-2024-11-20", type: "Tool-Free", oa: 17.62, l1: 28.00, l2: 3.23, l3: 0.00, ce: 58.81 },
+        { name: "gpt-4o-mini-2024-07-18", type: "Tool-Free", oa: 9.52, l1: 16.00, l2: 0.00, l3: 0.00, ce: 63.55 },
+        { name: "gpt-5-mini-2025-08-07", type: "Tool-Free", oa: 15.71, l1: 26.40, l2: 0.00, l3: 0.00, ce: 37.47 },
+        { name: "gemini-2.5-flash-2025-06", type: "Tool-Free", oa: 16.67, l1: 27.20, l2: 1.61, l3: 0.00, ce: 77.79 },
+        { name: "gemini-2.5-pro-2025-06", type: "Tool-Free", oa: 19.52, l1: 31.20, l2: 3.23, l3: 0.00, ce: 79.18 },
+        // Search Models
+        { name: "gemini-2.5-flash-2025-06 (w/ Search)", type: "Search", oa: 20.95, l1: 32.80, l2: 4.84, l3: 0.00, ce: 35.98 },
+        { name: "gemini-2.5-pro-2025-06 (w/ Search)", type: "Search", oa: 23.81, l1: 37.60, l2: 4.84, l3: 0.00, ce: 31.45 },
+        { name: "gpt-5.1-2025-11-13 (w/ Search)", type: "Search", oa: 15.24, l1: 21.60, l2: 6.45, l3: 4.35, ce: 30.20 },
+        { name: "o4-mini-deep-research-2025-06-26", type: "Search", oa: 22.86, l1: 30.40, l2: 12.90, l3: 8.70, ce: 42.55 }
+    ];
+
+    let currentFilter = 'All';
+    let currentSort = { column: 'oa', direction: 'desc' };
+
+    function initTable() {
+        renderTable();
+    }
+
+    function filterData(type) {
+        currentFilter = type;
+        // Update button states
+        const buttons = document.querySelectorAll('.filter-btn');
+        buttons.forEach(btn => {
+            if (btn.innerText.includes(type) || (type === 'All' && btn.innerText === 'All')) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
         });
-    });
+        renderTable();
+    }
+
+    function sortData(column) {
+        if (currentSort.column === column) {
+            currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+        } else {
+            currentSort.column = column;
+            currentSort.direction = 'desc'; // Default to desc for numbers
+            if (column === 'name') currentSort.direction = 'asc';
+            if (column === 'ce') currentSort.direction = 'asc'; // Lower CE is better usually, but here we sort by value. 
+                                                               // User might want to see lowest error first.
+        }
+        renderTable();
+    }
+
+    function renderTable() {
+        const tbody = document.getElementById('leaderboard-body');
+        tbody.innerHTML = '';
+
+        // 1. Filter
+        let filteredData = leaderboardData.filter(item => {
+            if (currentFilter === 'All') return true;
+            return item.type.includes(currentFilter); // Matches "Tool-Free" or "Search"
+        });
+
+        // 2. Sort
+        filteredData.sort((a, b) => {
+            let valA = a[currentSort.column];
+            let valB = b[currentSort.column];
+
+            if (typeof valA === 'string') {
+                valA = valA.toLowerCase();
+                valB = valB.toLowerCase();
+            }
+
+            if (valA < valB) return currentSort.direction === 'asc' ? -1 : 1;
+            if (valA > valB) return currentSort.direction === 'asc' ? 1 : -1;
+            return 0;
+        });
+
+        // 3. Find Best Scores (Max for Acc, Min for CE)
+        // We calculate best scores based on the *currently filtered* list.
+        const stats = {
+            oa: Math.max(...filteredData.map(d => d.oa)),
+            l1: Math.max(...filteredData.map(d => d.l1)),
+            l2: Math.max(...filteredData.map(d => d.l2)),
+            l3: Math.max(...filteredData.map(d => d.l3)),
+            ce: Math.min(...filteredData.map(d => d.ce)) // Lower is better for Error
+        };
+
+        // 4. Update Sort Icons
+        document.querySelectorAll('.sort-icon').forEach(icon => icon.innerText = '');
+        const sortIcon = document.getElementById(`sort-${currentSort.column}`);
+        if (sortIcon) sortIcon.innerText = currentSort.direction === 'asc' ? '▲' : '▼';
+
+        // 5. Render Rows
+        filteredData.forEach(item => {
+            const row = document.createElement('tr');
+            
+            // Helper to determine if value is best
+            const isBest = (key, val) => {
+                if (key === 'ce') return val === stats[key];
+                return val === stats[key] && val > 0; // Don't highlight 0 as best if everyone is 0? 
+                                                      // Actually if max is 0, then 0 is best. 
+                                                      // But let's stick to simple logic: match stats.
+            };
+
+            const cellContent = (val, key) => {
+                if (key === 'name') return val;
+                const formatted = val.toFixed(2);
+                if (isBest(key, val)) {
+                    return `<span class="best-score">${formatted}</span>`;
+                }
+                return formatted;
+            };
+
+            row.innerHTML = `
+                <td style="text-align: left;">${item.name}</td>
+                <td>${cellContent(item.oa, 'oa')}</td>
+                <td>${cellContent(item.l1, 'l1')}</td>
+                <td>${cellContent(item.l2, 'l2')}</td>
+                <td>${cellContent(item.l3, 'l3')}</td>
+                <td>${cellContent(item.ce, 'ce')}</td>
+            `;
+            tbody.appendChild(row);
+        });
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', initTable);
 </script>
 
 </body>
