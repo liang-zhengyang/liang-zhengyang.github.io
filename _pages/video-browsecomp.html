@@ -26,13 +26,93 @@ permalink: /video-browsecomp/
             --best-color: #d63031;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: var(--text-color);
             background-color: var(--bg-color);
             margin: 0;
+            padding-top: 70px;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-weight: 700;
+            font-size: 1.2em;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
             padding: 0;
+            gap: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            font-size: 0.95em;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                padding: 20px 0;
+                text-align: center;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links li { margin: 10px 0; }
+            .menu-toggle { display: block; }
         }
 
         .container {
@@ -179,6 +259,24 @@ permalink: /video-browsecomp/
 </head>
 <body>
 
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="#" class="nav-logo">Video-BrowseComp</a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#abstract" class="nav-link">Abstract</a></li>
+            <li><a href="#examples" class="nav-link">Examples</a></li>
+            <li><a href="#statistics" class="nav-link">Statistics</a></li>
+            <li><a href="#leaderboard" class="nav-link">Leaderboard</a></li>
+            <li><a href="#submission" class="nav-link">Submission</a></li>
+            <li><a href="#citation" class="nav-link">Citation</a></li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
     <header>
         <h1>Video-BrowseComp: Benchmarking Agentic Video Research on Open Web</h1>
@@ -194,7 +292,7 @@ permalink: /video-browsecomp/
         </div>
 
         <div class="button-block">
-            <a href="https://arxiv.org/abs/2504.12516" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="https://arxiv.org/abs/2512.23044" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Paper</a>
             <a href="https://huggingface.co/datasets/chr1ce/Video-Browsecomp" class="btn btn-info"><i class="fas fa-database"></i> Benchmark</a>
         </div>
     </header>
@@ -275,6 +373,23 @@ permalink: /video-browsecomp/
                     <!-- Rows will be populated by JavaScript -->
                 </tbody>
             </table>
+        </div>
+    </section>
+
+    <section id="submission">
+        <h2>Submission Guide</h2>
+        <div class="abstract-box" style="border-left: 5px solid #17a2b8;">
+            <p>We welcome submissions of new models to the Video-BrowseComp leaderboard! To submit your results, please follow these steps:</p>
+            <ol>
+                <li>Run your model on the <strong>Video-BrowseComp</strong> benchmark available on <a href="https://huggingface.co/datasets/chr1ce/Video-Browsecomp">Hugging Face</a>.</li>
+                <li>Prepare a JSON file containing your model's predictions and the calculated accuracy for each level.</li>
+                <li>Email your results, including model details (name, size, type) and a link to your paper or project page, to our team.</li>
+            </ol>
+            <p><strong>Contact us for submission:</strong></p>
+            <ul>
+                <li>Zhengyang Liang: <a href="mailto:zyliang@smu.edu.sg">zyliang@smu.edu.sg</a></li>
+                <li>Yan Shu: <a href="mailto:yan.shu@unitn.it">yan.shu@unitn.it</a></li>
+            </ul>
         </div>
     </section>
 
@@ -374,16 +489,6 @@ permalink: /video-browsecomp/
             return 0;
         });
 
-        // 3. Find Best Scores (Max for Acc, Min for CE)
-        // We calculate best scores based on the *currently filtered* list.
-        const stats = {
-            oa: Math.max(...filteredData.map(d => d.oa)),
-            l1: Math.max(...filteredData.map(d => d.l1)),
-            l2: Math.max(...filteredData.map(d => d.l2)),
-            l3: Math.max(...filteredData.map(d => d.l3)),
-            ce: Math.min(...filteredData.map(d => d.ce)) // Lower is better for Error
-        };
-
         // 4. Update Sort Icons
         document.querySelectorAll('.sort-icon').forEach(icon => icon.innerText = '');
         const sortIcon = document.getElementById(`sort-${currentSort.column}`);
@@ -393,21 +498,9 @@ permalink: /video-browsecomp/
         filteredData.forEach(item => {
             const row = document.createElement('tr');
             
-            // Helper to determine if value is best
-            const isBest = (key, val) => {
-                if (key === 'ce') return val === stats[key];
-                return val === stats[key] && val > 0; // Don't highlight 0 as best if everyone is 0? 
-                                                      // Actually if max is 0, then 0 is best. 
-                                                      // But let's stick to simple logic: match stats.
-            };
-
             const cellContent = (val, key) => {
                 if (key === 'name') return val;
-                const formatted = val.toFixed(2);
-                if (isBest(key, val)) {
-                    return `<span class="best-score">${formatted}</span>`;
-                }
-                return formatted;
+                return val.toFixed(2);
             };
 
             row.innerHTML = `
@@ -420,6 +513,11 @@ permalink: /video-browsecomp/
             `;
             tbody.appendChild(row);
         });
+    }
+
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('active');
     }
 
     // Initialize
