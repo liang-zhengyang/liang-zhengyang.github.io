@@ -7,7 +7,7 @@ permalink: /video-browsecomp/
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video-BrowseComp: Benchmarking Agentic Video Research on Open Web</title>
+    <title>Video-Browser: Towards Agentic Open-web Video Browsing</title>
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -268,6 +268,7 @@ permalink: /video-browsecomp/
         <ul class="nav-links" id="nav-links">
             <li><a href="#" class="nav-link">Home</a></li>
             <li><a href="#abstract" class="nav-link">Abstract</a></li>
+            <li><a href="#method" class="nav-link">Method</a></li>
             <li><a href="#examples" class="nav-link">Examples</a></li>
             <li><a href="#statistics" class="nav-link">Statistics</a></li>
             <li><a href="#leaderboard" class="nav-link">Leaderboard</a></li>
@@ -282,13 +283,12 @@ permalink: /video-browsecomp/
         <h1>Video-BrowseComp: Benchmarking Agentic Video Research on Open Web</h1>
         
         <div class="author-block">
-            <strong>Zhengyang Liang<sup>1,♣</sup>, Yan Shu<sup>2,♣</sup>, Xiangrui Liu<sup>3</sup>, Minghao Qin<sup>3</sup>, Kaixin Liang<sup>4</sup>, Paolo Rota<sup>2</sup>, Nicu Sebe<sup>2</sup>, Zheng Liu<sup>5</sup>, Lizi Liao<sup>1</sup></strong>
+            <strong>Zhengyang Liang<sup>1,♣</sup>, Yan Shu<sup>2,♣</sup>, Xiangrui Liu<sup>3</sup>, Minghao Qin<sup>3</sup>, Nicu Sebe<sup>2</sup>, Zheng Liu<sup>4</sup>, Lizi Liao<sup>1</sup></strong>
         </div>
 
         <div class="affiliation-block">
             <sup>1</sup>Singapore Management University, <sup>2</sup>University of Trento, <br>
-            <sup>3</sup>Beijing Academy of Artificial Intelligence, <sup>4</sup>Beijing University of Posts and Telecommunications, <br>
-            <sup>5</sup>Hong Kong Polytechnic University
+            <sup>3</sup>Beijing Academy of Artificial Intelligence, <sup>4</sup>Hong Kong Polytechnic University
         </div>
 
         <div class="button-block">
@@ -302,7 +302,24 @@ permalink: /video-browsecomp/
         <div class="abstract-box">
             The evolution of autonomous agents is redefining information seeking, transitioning from passive retrieval to proactive, open-ended web research. However, while textual and static multimodal agents have seen rapid progress, a significant modality gap remains in the web's most dynamic modality: video. Existing video benchmarks predominantly focus on passive perception, feeding curated clips to models without requiring external retrieval. They fail to evaluate agentic video research, which necessitates actively interrogating video timelines, cross-referencing dispersed evidence, and verifying claims against the open web. 
             <br><br>
-            To bridge this gap, we present <strong>Video-BrowseComp</strong>, a challenging benchmark comprising 210 questions tailored for open-web agentic video reasoning. Unlike prior benchmarks, Video-BrowseComp enforces a mandatory dependency on temporal visual evidence, ensuring that answers cannot be derived solely through text search but require navigating video timelines to verify external claims. Our evaluation of state-of-the-art models reveals a critical bottleneck: even advanced search-augmented models like GPT-5.1 (w/ Search) achieve only 23.81% accuracy. Our analysis reveals that these models largely rely on textual proxies, excelling in metadata-rich domains (e.g., TV shows with plot summaries) but collapsing in metadata-sparse, dynamic environments (e.g., sports, gameplay) where visual grounding is essential. As the first open-web video research benchmark, Video-BrowseComp advances the field beyond passive perception toward proactive video reasoning.
+            To bridge this gap, we present <strong>Video-BrowseComp</strong>, a challenging benchmark comprising 210 questions tailored for open-web agentic video reasoning. Unlike prior benchmarks, Video-BrowseComp enforces a mandatory dependency on temporal visual evidence, ensuring that answers cannot be derived solely through text search but require navigating video timelines to verify external claims. Our evaluation of state-of-the-art models reveals a critical bottleneck: even advanced search-augmented models like GPT-5.1 (w/ Search) achieve only 15.24% accuracy. Our analysis reveals that these models largely rely on textual proxies, excelling in metadata-rich domains (e.g., TV shows with plot summaries) but collapsing in metadata-sparse, dynamic environments (e.g., sports, gameplay) where visual grounding is essential. As the first open-web video research benchmark, Video-BrowseComp advances the field beyond passive perception toward proactive video reasoning.
+        </div>
+    </section>
+
+    <section id="method">
+        <h2>Video-Browser Agent</h2>
+        <div class="abstract-box" style="background-color: #f0f7ff; border-left-color: #0056b3;">
+            <p>
+                To tackle the challenges of open-web agentic video research, we propose <strong>Video-Browser</strong>, an agentic framework composed of three specialized modules sharing a global memory:
+            </p>
+            <ul>
+                <li><strong>Planner:</strong> Acts as the cognitive controller, decomposing user queries into sequential sub-tasks and generating search queries based on interaction history.</li>
+                <li><strong>Watcher:</strong> Functions as a high-efficiency filter and localizer using a <strong>Pyramidal Perception</strong> mechanism. It progressively prunes the search space through <em>Semantic Filtering</em> (Stage I), <em>Sparse Localization</em> (Stage II), and <em>Zoom-in</em> (Stage III) to identify and decode relevant visual evidence without overwhelming computational costs.</li>
+                <li><strong>Analyst:</strong> Synthesizes the final answer by reasoning over the accumulated multimodal evidence and the query context.</li>
+            </ul>
+            <p>
+                This architecture enables Video-Browser to actively interrogate video timelines and cross-reference dispersed evidence, achieving a <strong>71.8% relative improvement</strong> over state-of-the-art search-augmented models (26.19% vs 15.24% accuracy).
+            </p>
         </div>
     </section>
 
@@ -395,10 +412,10 @@ permalink: /video-browsecomp/
 
     <section id="citation">
         <h2>Citation</h2>
-        <pre><code>@misc{liang2025videobrowsecompbenchmarkingagenticvideo,
-      title={Video-BrowseComp: Benchmarking Agentic Video Research on Open Web}, 
-      author={Zhengyang Liang and Yan Shu and Xiangrui Liu and Minghao Qin and Kaixin Liang and Paolo Rota and Nicu Sebe and Zheng Liu and Lizi Liao},
-      year={2025},
+        <pre><code>@misc{liang2026videobrowseragenticopenwebvideo,
+      title={Video-Browser: Towards Agentic Open-web Video Browsing}, 
+      author={Zhengyang Liang and Yan Shu and Xiangrui Liu and Minghao Qin and Kaixin Liang and Nicu Sebe and Zheng Liu and Lizi Liao},
+      year={2026},
       eprint={2512.23044},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
