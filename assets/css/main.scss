@@ -71,7 +71,7 @@ body {
         position: absolute;
         z-index: 0;
         top: -2rem;
-        right: -1.5rem;
+        right: 0;
         width: 520px;
         max-width: 72vw;
         height: 280px;
@@ -191,7 +191,7 @@ h1:before, .anchor:before {
 @media (max-width: 600px) {
     .home-page .page__inner-wrap:before {
         top: -1rem;
-        right: -.75rem;
+        right: 0;
         width: 320px;
         max-width: 85vw;
         height: 172px;
