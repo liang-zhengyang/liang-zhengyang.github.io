@@ -19,7 +19,7 @@ redirect_from:
 
 Zhengyang Liang is currently first-year PhD at Singapore Management University, supervised by Prof.[Lizi Liao](https://liziliao.github.io/).I used to work as a research intern at Beijing Academic of Artificial Intelligence, supervised by PI.[Zheng Liu](https://scholar.google.com/citations?hl=zh-CN&user=k2SF4M0AAAAJ) and PI.[Bo Zhao](https://www.bozhao.me/). Dedicated to exploring Video MLLM. Before that, I got my bachelor's degree at Beijing University of Posts and Telecommunications.
 
-My research interest includes MLLM, Video LLM and Video Agent. <a href='https://scholar.google.com/citations?user=9IC8FBQAAAAJ'></a> 
+My research interest includes MLLM, Video LLM and Video Agent. <a href="https://scholar.google.com/citations?user=9IC8FBQAAAAJ">Google Scholar citations: <span id="total_cit">—</span></a>.
 
 ✉️ Feel free to contact me with email: chr1ce@foxmail.com
 <!-- (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=9IC8FBQAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
@@ -46,7 +46,7 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href='https://
 
 <strong>Zhengyang Liang<sup>*</sup></strong>, Yan Shu<sup>*</sup>, Xiangrui Liu, Minghao Qin, Kaixin Liang, Paolo Rota, Nicu Sebe, Zheng Liu, Lizi Liao<sup>✉</sup>
 
-[**Paper**](https://arxiv.org/abs/2512.23044)|[**HomePage**](https://liang-zhengyang.github.io/video-browsecomp/)|[**Benchmark**](https://huggingface.co/datasets/chr1ce/Video-Browsecomp) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2512.23044)|[**HomePage**](https://liang-zhengyang.github.io/video-browsecomp/)|[**Benchmark**](https://huggingface.co/datasets/chr1ce/Video-Browsecomp) <strong><span class='show_paper_citations' data-title='Video-BrowseComp: Benchmarking Agentic Video Research on Open Web'></span></strong>
 </div>
 </div>
 
@@ -59,7 +59,7 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href='https://
 
 <strong>Zhengyang Liang<sup>*</sup></strong>, Daoan Zhang<sup>*</sup>, Huichi Zhou, Rui Huang, Bobo Li, Yuechen Zhang, Shengqiong Wu, Xiaohan Wang, Jiebo Luo, Lizi Liao, Hao Fei<sup>✉</sup>
 
-[**Paper**](https://arxiv.org/abs/2511.08521)|[**HomePage**](https://univa.online)|[**Code**](https://github.com/univa-agent/univa)|[**Benchmark**](https://huggingface.co/datasets/chr1ce/UniVA-Bench) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2511.08521)|[**HomePage**](https://univa.online)|[**Code**](https://github.com/univa-agent/univa)|[**Benchmark**](https://huggingface.co/datasets/chr1ce/UniVA-Bench) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:YsMSGLbcyi4C' data-title='UniVA: Universal Video Agent towards Open-Source Next-Generation Video Generalist'></span></strong>
 </div>
 </div>
 
@@ -70,7 +70,7 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href='https://
 
 Xiangrui Liu<sup>*</sup>, Minghao Qin<sup>*</sup>, Yan Shu, <strong>Zhengyang Liang</strong>, Yang Tian, Chen Jason Zhang, Bo Zhao, Zheng Liu<sup>✉</sup>
 
-[**Paper**](https://arxiv.org/abs/2509.26360) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2509.26360) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:Y0pCki6q_DkC' data-title='TimeScope: Towards Task-Oriented Temporal Grounding In Long Videos'></span></strong>
 </div>
 </div>
 
@@ -81,7 +81,7 @@ Xiangrui Liu<sup>*</sup>, Minghao Qin<sup>*</sup>, Yan Shu, <strong>Zhengyang Li
 
 Minghao Qin<sup>*</sup>, Xiangrui Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yan Shu, Huaying Yuan, Juenjie Zhou, Shitao Xiao, Bo Zhao, Zheng Liu<sup>✉</sup>
 
-[**Paper**](https://arxiv.org/abs/2506.19225)|[**HomePage**](https://unabletousegit.github.io/video-xl2.github.io/)|[**Code**](https://github.com/VectorSpaceLab/Video-XL)|[**Model**](https://huggingface.co/BAAI/Video-XL-2) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2506.19225)|[**HomePage**](https://unabletousegit.github.io/video-xl2.github.io/)|[**Code**](https://github.com/VectorSpaceLab/Video-XL)|[**Model**](https://huggingface.co/BAAI/Video-XL-2) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:Tyk-4Ss8FVUC' data-title='Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification'></span></strong>
 </div>
 </div>
 
@@ -92,7 +92,7 @@ Minghao Qin<sup>*</sup>, Xiangrui Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*
 
 Ze Liu, <strong>Zhengyang Liang</strong>, Junjie Zhou, Zheng Liu<sup>✉</sup>, Defu Lian
 
-[**Paper**](https://arxiv.org/abs/2502.11431)|[**Code**](https://github.com/VectorSpaceLab/Vis-IR)|[**Model**](https://huggingface.co/BAAI/BGE-VL-Screenshot)|[**Dataset**](https://huggingface.co/datasets/marsh123/VIRA) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2502.11431)|[**Code**](https://github.com/VectorSpaceLab/Vis-IR)|[**Model**](https://huggingface.co/BAAI/BGE-VL-Screenshot)|[**Dataset**](https://huggingface.co/datasets/marsh123/VIRA) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:qjMakFHDy7sC' data-title='Any Information Is Just Worth One Single Screenshot: Unifying Search With Visualized Information Retrieval'></span></strong>
 </div>
 </div>
 
@@ -103,7 +103,7 @@ Ze Liu, <strong>Zhengyang Liang</strong>, Junjie Zhou, Zheng Liu<sup>✉</sup>, 
 
 Yan Shu, Zheng Liu<sup>✉</sup>, Peitian Zhang, Minghao Qin, Junjie Zhou, <strong>Zhengyang Liang</strong>, Tiejun Huang, Bo Zhao<sup>✉</sup>
 
-[**Paper**](https://arxiv.org/abs/2409.14485)|[**Code**](https://github.com/VectorSpaceLab/Video-XL) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2409.14485)|[**Code**](https://github.com/VectorSpaceLab/Video-XL) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:9yKSN-GCB0IC' data-title='Video-XL: Extra-Long Vision Language Model for Hour-Scale Video Understanding'></span></strong>
 </div>
 </div>
 
@@ -114,7 +114,7 @@ Yan Shu, Zheng Liu<sup>✉</sup>, Peitian Zhang, Minghao Qin, Junjie Zhou, <stro
 
 Junjie Zhou<sup>*</sup>, Yan Shu<sup>*</sup>, Bo Zhao<sup>*</sup>, Boya Wu, <strong>Zhengyang Liang</strong>, Shitao Xiao, Xi Yang, Yongping Xiong, Bo Zhang, Tiejun Huang, Zheng Liu<sup>✉</sup>
 
-[**Paper**](https://arxiv.org/abs/2406.04264)|[**Code**](https://github.com/JUNJIE99/MLVU/) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2406.04264)|[**Code**](https://github.com/JUNJIE99/MLVU/) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:zYLM7Y9cAGgC' data-title='MLVU: A Comprehensive Benchmark for Multi-Task Long Video Understanding'></span></strong>
 </div>
 </div>
 
@@ -125,7 +125,7 @@ Junjie Zhou<sup>*</sup>, Yan Shu<sup>*</sup>, Bo Zhao<sup>*</sup>, Boya Wu, <str
 
 Yexin Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yueze Wang, Xianfeng Wu, Feilong Tang, Muyang He, Jian Li, Zheng Liu, Harry Yang, Sernam Lim, Bo Zhao<sup>✉</sup>
 
-[**Paper**](https://arxiv.org/abs/2406.10638)|[**Code**](https://github.com/BAAI-DCAI/Multimodal-Robustness-Benchmark)|[**Dataset**](https://huggingface.co/datasets/BAAI/Multimodal-Robustness-Benchmark) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2406.10638)|[**Code**](https://github.com/BAAI-DCAI/Multimodal-Robustness-Benchmark)|[**Dataset**](https://huggingface.co/datasets/BAAI/Multimodal-Robustness-Benchmark) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:d1gkVwhDpl0C' data-title='Unveiling the Ignorance of MLLMs: Seeing Clearly, Answering Incorrectly'></span></strong>
 </div>
 </div>
 
@@ -136,7 +136,7 @@ Yexin Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yueze Wang,
 
 **Zhengyang Liang**, Meiyu Liang<sup>✉</sup>, Wei Huang, Yawen Li, Zhe Xue
 
-[**Paper**](https://arxiv.org/abs/2404.10838)|[**Code**](https://github.com/chrisx599/DSMD) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://arxiv.org/abs/2404.10838)|[**Code**](https://github.com/chrisx599/DSMD) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:u-x6o8ySG0sC' data-title='Dynamic Self-adaptive Multiscale Distillation from Pre-trained Multimodal Large Model for Efficient Cross-modal Representation Learning'></span></strong>
 </div>
 </div>
 
@@ -147,7 +147,7 @@ Yexin Liu<sup>*</sup>, <strong>Zhengyang Liang<sup>*</sup></strong>, Yueze Wang,
 
 Meiyu Liang, Junping Du<sup>✉</sup>, **Zhengyang Liang**, Yongwang Xing, Wei Huang, Zhe Xue (Finished as first student author)
 
-[**Paper**](https://ojs.aaai.org/index.php/AAAI/article/view/29280) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Paper**](https://ojs.aaai.org/index.php/AAAI/article/view/29280) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:u5HHmVD_uO8C' data-title='Self-Supervised Multi-Modal Knowledge Graph Contrastive Hashing for Cross-Modal Search'></span></strong>
 </div>
 </div>
 
