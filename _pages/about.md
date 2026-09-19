@@ -177,3 +177,14 @@ Meiyu Liang, Junping Du<sup>✉</sup>, **Zhengyang Liang**, Yongwang Xing, Wei H
 - CVPR Reviewer 2026
 - ACM TOIS Reviewer
 - ACM TOMM Reviewer
+
+<div class="page-footer-meta">
+  <a class="page-view-counter" href="https://hits.sh/liang-zhengyang.github.io/" title="Page view statistics" aria-label="Page view statistics">
+    <img
+      src="https://hits.sh/liang-zhengyang.github.io.svg?style=flat&amp;label=Views&amp;extraCount=5000&amp;labelColor=8a704c&amp;color=141c52"
+      alt="Page views"
+      height="18"
+      loading="lazy"
+    >
+  </a>
+</div>
