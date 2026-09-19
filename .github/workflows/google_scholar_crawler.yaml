@@ -27,12 +27,20 @@ jobs:
           cache: pip
           cache-dependency-path: google_scholar_crawler/requirements.txt
 
-      - name: Install crawler dependencies
-        run: pip install -r google_scholar_crawler/requirements.txt
+      - name: Prepare crawler dependencies
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: |
+          if [ -z "$SERPAPI_KEY" ]; then
+            pip install -r google_scholar_crawler/requirements.txt
+          else
+            echo "Using SerpApi; no third-party Python packages are required."
+          fi
 
       - name: Fetch citation data
         env:
           GOOGLE_SCHOLAR_ID: "9IC8FBQAAAAJ"
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: python google_scholar_crawler/main.py
 
       - name: Publish citation data branch
