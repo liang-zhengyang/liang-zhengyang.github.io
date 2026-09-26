@@ -1,0 +1,212 @@
+{
+  "name": "Zhengyang Liang",
+  "scholar_id": "9IC8FBQAAAAJ",
+  "citedby": 1199,
+  "citedby5y": 1199,
+  "hindex": 9,
+  "hindex5y": 9,
+  "i10index": 9,
+  "i10index5y": 9,
+  "updated": "2026-09-26T12:30:30.109135+00:00",
+  "source": "serpapi",
+  "publications": {
+    "9IC8FBQAAAAJ:zYLM7Y9cAGgC": {
+      "author_pub_id": "9IC8FBQAAAAJ:zYLM7Y9cAGgC",
+      "bib": {
+        "title": "Mlvu: Benchmarking multi-task long video understanding",
+        "author": "J Zhou, Y Shu, B Zhao, B Wu, Z Liang, S Xiao, M Qin, X Yang, Y Xiong, ...",
+        "citation": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR …, 2025"
+      },
+      "num_citations": 706
+    },
+    "9IC8FBQAAAAJ:9yKSN-GCB0IC": {
+      "author_pub_id": "9IC8FBQAAAAJ:9yKSN-GCB0IC",
+      "bib": {
+        "title": "Video-xl: Extra-long vision language model for hour-scale video understanding",
+        "author": "Y Shu, Z Liu, P Zhang, M Qin, J Zhou, Z Liang, T Huang, B Zhao",
+        "citation": "CVPR 2025 (Oral), 2024"
+      },
+      "num_citations": 285
+    },
+    "9IC8FBQAAAAJ:Tyk-4Ss8FVUC": {
+      "author_pub_id": "9IC8FBQAAAAJ:Tyk-4Ss8FVUC",
+      "bib": {
+        "title": "Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification",
+        "author": "M Qin*, X Liu*, Z Liang*, Y Shu, H Yuan, J Zhou, S Xiao, B Zhao, Z Liu",
+        "citation": "arXiv preprint (co-first author), 2025"
+      },
+      "num_citations": 47
+    },
+    "9IC8FBQAAAAJ:d1gkVwhDpl0C": {
+      "author_pub_id": "9IC8FBQAAAAJ:d1gkVwhDpl0C",
+      "bib": {
+        "title": "Unveiling the Ignorance of MLLMs: Seeing Clearly, Answering Incorrectly",
+        "author": "Y Liu*, Z Liang*, Y Wang, X Wu, F Tang, M He, J Li, Z Liu, H Yang, S Lim, ...",
+        "citation": "CVPR 2025 (co-first author), 2024"
+      },
+      "num_citations": 46
+    },
+    "9IC8FBQAAAAJ:u5HHmVD_uO8C": {
+      "author_pub_id": "9IC8FBQAAAAJ:u5HHmVD_uO8C",
+      "bib": {
+        "title": "Self-supervised multi-modal knowledge graph contrastive hashing for cross-modal search",
+        "author": "M Liang, J Du, Z Liang, Y Xing, W Huang, Z Xue",
+        "citation": "AAAI 2024 (First Student Author) 38 (12), 13744-13753, 2024"
+      },
+      "num_citations": 46
+    },
+    "9IC8FBQAAAAJ:qjMakFHDy7sC": {
+      "author_pub_id": "9IC8FBQAAAAJ:qjMakFHDy7sC",
+      "bib": {
+        "title": "Any Information Is Just Worth One Single Screenshot: Unifying Search With Visualized Information Retrieval",
+        "author": "Z Liu, Z Liang, J Zhou, Z Liu, D Lian",
+        "citation": "ACL 2025, 2025"
+      },
+      "num_citations": 17
+    },
+    "9IC8FBQAAAAJ:YsMSGLbcyi4C": {
+      "author_pub_id": "9IC8FBQAAAAJ:YsMSGLbcyi4C",
+      "bib": {
+        "title": "Univa: Universal video agent towards open-source next-generation video generalist",
+        "author": "Z Liang, D Zhang, H Zhou, R Huang, B Li, Y Zhang, S Wu, X Wang, J Luo, ...",
+        "citation": "arXiv preprint arXiv:2511.08521, 2025"
+      },
+      "num_citations": 15
+    },
+    "9IC8FBQAAAAJ:IjCSPb-OGe4C": {
+      "author_pub_id": "9IC8FBQAAAAJ:IjCSPb-OGe4C",
+      "bib": {
+        "title": "MomentSeeker: A Task-Oriented Benchmark For Long-Video Moment Retrieval",
+        "author": "H Yuan, J Ni, Z Liu, Y Wang, J Zhou, Z Liang, B Zhao, Z Cao, Z Dou, ...",
+        "citation": "Neurips 2025 DB Track, 2025"
+      },
+      "num_citations": 15
+    },
+    "9IC8FBQAAAAJ:hqOjcs7Dif8C": {
+      "author_pub_id": "9IC8FBQAAAAJ:hqOjcs7Dif8C",
+      "bib": {
+        "title": "Video-browser: Towards agentic open-web video browsing",
+        "author": "Z Liang, Y Shu, X Liu, M Qin, K Liang, N Sebe, Z Liu, L Liao",
+        "citation": "arXiv preprint arXiv:2512.23044, 2025"
+      },
+      "num_citations": 11
+    },
+    "9IC8FBQAAAAJ:u-x6o8ySG0sC": {
+      "author_pub_id": "9IC8FBQAAAAJ:u-x6o8ySG0sC",
+      "bib": {
+        "title": "Dynamic Self-adaptive Multiscale Distillation from Pre-trained Multimodal Large Model for Efficient Cross-modal Representation Learning",
+        "author": "Z Liang, M Liang, W Huang, Y Li, Z Xue",
+        "citation": "ACM MM 2025, 2024"
+      },
+      "num_citations": 6
+    },
+    "9IC8FBQAAAAJ:Y0pCki6q_DkC": {
+      "author_pub_id": "9IC8FBQAAAAJ:Y0pCki6q_DkC",
+      "bib": {
+        "title": "Timescope: Towards task-oriented temporal grounding in long videos",
+        "author": "X Liu, M Qin, Y Shu, Z Liang, Y Tian, CJ Zhang, B Zhao, Z Liu",
+        "citation": "EMNLP Main, 2026, 2025"
+      },
+      "num_citations": 3
+    },
+    "9IC8FBQAAAAJ:roLk4NBRz8UC": {
+      "author_pub_id": "9IC8FBQAAAAJ:roLk4NBRz8UC",
+      "bib": {
+        "title": "DyCo-RL: Dynamic Cross-Modal Coordination for Visual Reasoning",
+        "author": "H Lin, Y Shu, Z Liang, C Liu, X Liu, M Qin, T Long, Z Liu, N Sebe",
+        "citation": "arXiv preprint arXiv:2606.08035, 2026"
+      },
+      "num_citations": 1
+    },
+    "9IC8FBQAAAAJ:ufrVoPGSRksC": {
+      "author_pub_id": "9IC8FBQAAAAJ:ufrVoPGSRksC",
+      "bib": {
+        "title": "DeepXiv-SDK: An Agentic Data Interface for Scientific Literature",
+        "author": "H Qian, Z Xia, Z Liu, J Chen, K Luo, M Qin, C Li, L Xiong, J Lan, S Wang, ...",
+        "citation": "arXiv preprint arXiv:2603.00084, 2026"
+      },
+      "num_citations": 1
+    },
+    "9IC8FBQAAAAJ:Se3iqnhoufwC": {
+      "author_pub_id": "9IC8FBQAAAAJ:Se3iqnhoufwC",
+      "bib": {
+        "title": "VideoCreator: An Agentic System for Multi-turn Video Production",
+        "author": "Z Liang, Y Shu, C Gurrin, N Sebe, L Liao",
+        "citation": "Proceedings of the 2026 International Conference on Multimedia Retrieval …, 2026"
+      },
+      "num_citations": null
+    }
+  },
+  "publications_by_title": {
+    "mlvubenchmarkingmultitasklongvideounderstanding": {
+      "title": "Mlvu: Benchmarking multi-task long video understanding",
+      "author_pub_id": "9IC8FBQAAAAJ:zYLM7Y9cAGgC",
+      "num_citations": 706
+    },
+    "videoxlextralongvisionlanguagemodelforhourscalevideounderstanding": {
+      "title": "Video-xl: Extra-long vision language model for hour-scale video understanding",
+      "author_pub_id": "9IC8FBQAAAAJ:9yKSN-GCB0IC",
+      "num_citations": 285
+    },
+    "videoxl2towardsverylongvideounderstandingthroughtaskawarekvsparsification": {
+      "title": "Video-XL-2: Towards Very Long-Video Understanding Through Task-Aware KV Sparsification",
+      "author_pub_id": "9IC8FBQAAAAJ:Tyk-4Ss8FVUC",
+      "num_citations": 47
+    },
+    "unveilingtheignoranceofmllmsseeingclearlyansweringincorrectly": {
+      "title": "Unveiling the Ignorance of MLLMs: Seeing Clearly, Answering Incorrectly",
+      "author_pub_id": "9IC8FBQAAAAJ:d1gkVwhDpl0C",
+      "num_citations": 46
+    },
+    "selfsupervisedmultimodalknowledgegraphcontrastivehashingforcrossmodalsearch": {
+      "title": "Self-supervised multi-modal knowledge graph contrastive hashing for cross-modal search",
+      "author_pub_id": "9IC8FBQAAAAJ:u5HHmVD_uO8C",
+      "num_citations": 46
+    },
+    "anyinformationisjustworthonesinglescreenshotunifyingsearchwithvisualizedinformationretrieval": {
+      "title": "Any Information Is Just Worth One Single Screenshot: Unifying Search With Visualized Information Retrieval",
+      "author_pub_id": "9IC8FBQAAAAJ:qjMakFHDy7sC",
+      "num_citations": 17
+    },
+    "univauniversalvideoagenttowardsopensourcenextgenerationvideogeneralist": {
+      "title": "Univa: Universal video agent towards open-source next-generation video generalist",
+      "author_pub_id": "9IC8FBQAAAAJ:YsMSGLbcyi4C",
+      "num_citations": 15
+    },
+    "momentseekerataskorientedbenchmarkforlongvideomomentretrieval": {
+      "title": "MomentSeeker: A Task-Oriented Benchmark For Long-Video Moment Retrieval",
+      "author_pub_id": "9IC8FBQAAAAJ:IjCSPb-OGe4C",
+      "num_citations": 15
+    },
+    "videobrowsertowardsagenticopenwebvideobrowsing": {
+      "title": "Video-browser: Towards agentic open-web video browsing",
+      "author_pub_id": "9IC8FBQAAAAJ:hqOjcs7Dif8C",
+      "num_citations": 11
+    },
+    "dynamicselfadaptivemultiscaledistillationfrompretrainedmultimodallargemodelforefficientcrossmodalrepresentationlearning": {
+      "title": "Dynamic Self-adaptive Multiscale Distillation from Pre-trained Multimodal Large Model for Efficient Cross-modal Representation Learning",
+      "author_pub_id": "9IC8FBQAAAAJ:u-x6o8ySG0sC",
+      "num_citations": 6
+    },
+    "timescopetowardstaskorientedtemporalgroundinginlongvideos": {
+      "title": "Timescope: Towards task-oriented temporal grounding in long videos",
+      "author_pub_id": "9IC8FBQAAAAJ:Y0pCki6q_DkC",
+      "num_citations": 3
+    },
+    "dycorldynamiccrossmodalcoordinationforvisualreasoning": {
+      "title": "DyCo-RL: Dynamic Cross-Modal Coordination for Visual Reasoning",
+      "author_pub_id": "9IC8FBQAAAAJ:roLk4NBRz8UC",
+      "num_citations": 1
+    },
+    "deepxivsdkanagenticdatainterfaceforscientificliterature": {
+      "title": "DeepXiv-SDK: An Agentic Data Interface for Scientific Literature",
+      "author_pub_id": "9IC8FBQAAAAJ:ufrVoPGSRksC",
+      "num_citations": 1
+    },
+    "videocreatoranagenticsystemformultiturnvideoproduction": {
+      "title": "VideoCreator: An Agentic System for Multi-turn Video Production",
+      "author_pub_id": "9IC8FBQAAAAJ:Se3iqnhoufwC",
+      "num_citations": null
+    }
+  }
+}
