@@ -215,6 +215,9 @@
   async function load() {
     const dailyCacheKey = new Date().toISOString().slice(0, 10);
     const urls = [...new Set([settings.dataset.url, settings.dataset.fallbackUrl].filter(Boolean))];
+    const needsPublications = settings.dataset.autoPublications === "true" &&
+      document.getElementById("scholar-publications");
+    let citationOnlyData = null;
     for (const url of urls) {
       try {
         const response = await fetch(`${url}?v=${dailyCacheKey}`, {
@@ -223,6 +226,13 @@
         });
         if (!response.ok) throw new Error(`Scholar request failed: ${response.status}`);
         const data = validateData(await response.json());
+        // A CDN may still serve the old schema after the crawler has published
+        // the new list. Try the direct source before accepting that snapshot.
+        if (needsPublications && url !== urls[urls.length - 1] &&
+            (!Array.isArray(data.publication_list) || !data.publication_list.length)) {
+          citationOnlyData = data;
+          continue;
+        }
         updatePublications(data);
         updateCitations(data);
         return;
@@ -230,6 +240,7 @@
         console.warn("Unable to load Google Scholar data.", error);
       }
     }
+    if (citationOnlyData) updateCitations(citationOnlyData);
   }
 
   function initialize() {
