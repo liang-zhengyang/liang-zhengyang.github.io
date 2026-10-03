@@ -1,4 +1,4 @@
-"""Fetch Google Scholar statistics and write static JSON for the homepage."""
+"""Fetch Google Scholar publications and statistics for the homepage."""
 
 from __future__ import annotations
 
@@ -55,6 +55,7 @@ def fetch_with_serpapi(scholar_id: str, api_key: str) -> dict:
         "hl": "en",
         "num": 100,
         "start": 0,
+        "sort": "pubdate",
     }
     articles = []
     first_page = None
@@ -84,7 +85,9 @@ def fetch_with_serpapi(scholar_id: str, api_key: str) -> dict:
                 "title": article.get("title", ""),
                 "author": article.get("authors", ""),
                 "citation": article.get("publication", ""),
+                "pub_year": article.get("year", ""),
             },
+            "pub_url": article.get("link", ""),
             "num_citations": article.get("cited_by", {}).get("value", 0),
         }
         for article in articles
@@ -118,6 +121,10 @@ def fetch_with_scholarly(scholar_id: str) -> dict:
 def build_payload(author: dict) -> dict:
     publications = {}
     publications_by_title = {}
+    publication_list = []
+
+    if not author.get("name") or not author.get("scholar_id"):
+        raise RuntimeError("No valid Scholar author returned; keeping previously published data")
 
     for publication in author.get("publications", []):
         publication_id = publication.get("author_pub_id")
@@ -126,13 +133,42 @@ def build_payload(author: dict) -> dict:
 
         title = publication.get("bib", {}).get("title", "")
         if title:
+            bib = publication.get("bib", {})
+            scholar_url = "https://scholar.google.com/citations?" + urlencode({
+                "view_op": "view_citation",
+                "user": author["scholar_id"],
+                "citation_for_view": publication_id,
+                "hl": "en",
+            }) if publication_id else "https://scholar.google.com/citations?" + urlencode({
+                "user": author["scholar_id"],
+                "hl": "en",
+            })
+            publication_list.append({
+                "title": title,
+                "author_pub_id": publication_id,
+                "authors": bib.get("author", ""),
+                "venue": bib.get("citation") or bib.get("venue", ""),
+                "year": str(bib.get("pub_year") or ""),
+                "url": publication.get("pub_url") or scholar_url,
+                "scholar_url": scholar_url,
+                "num_citations": publication.get("num_citations", 0),
+            })
             publications_by_title[normalize_title(title)] = {
                 "title": title,
                 "author_pub_id": publication_id,
                 "num_citations": publication.get("num_citations", 0),
             }
 
+    if not publication_list:
+        raise RuntimeError("No Scholar publications returned; keeping previously published data")
+
+    publication_list.sort(
+        key=lambda paper: int(paper["year"]) if paper["year"].isdigit() else 0,
+        reverse=True,
+    )
+
     return {
+        "schema_version": 2,
         "name": author.get("name", ""),
         "scholar_id": author.get("scholar_id", ""),
         "citedby": author.get("citedby", 0),
@@ -145,6 +181,7 @@ def build_payload(author: dict) -> dict:
         "source": author.get("source", "google_scholar"),
         "publications": publications,
         "publications_by_title": publications_by_title,
+        "publication_list": publication_list,
     }
 
 

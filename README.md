@@ -35,8 +35,11 @@ Some examples:
 1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
 1. Configure the google scholar citation crawler:
     1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
-    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
-    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
+    1. Set `GOOGLE_SCHOLAR_ID` in `.github/workflows/google_scholar_crawler.yaml` to the same profile as the Scholar URL in `_config.yml`.
+    1. Enable the `Update Google Scholar publications and citations` workflow under `Actions`. It writes `gs_data.json` to the `google-scholar-stats` branch daily at 08:00 UTC (16:00 Singapore/Beijing), or manually with `Run workflow`. Pushing changes to the crawler or this workflow on main also triggers a crawl.
+    1. This site's workflow is configured for Scholar ID `9IC8FBQAAAAJ`. To change profiles, update both the Scholar URL in `_config.yml` and `GOOGLE_SCHOLAR_ID` in the workflow. Set the optional Actions secret `SERPAPI_KEY` to use SerpApi; otherwise the crawler uses scholarly.
+    1. `google_scholar_publications_auto_update: true` updates matched titles, publication details and citations, adds new Scholar papers, and sorts cards by descending year. Matching uses Scholar IDs before normalized titles. Existing images, full author lists, contribution marks, conference badges and resource links remain curated; new cards use Scholar author/venue metadata and a Scholar details link. Add images and code/project links manually when desired.
+    1. Curated cards remain as a static fallback, including unmatched papers. Failed fetches leave them visible. Run the updated workflow successfully once to populate the new list schema; old snapshots still update citations. Set `google_scholar_publications_auto_update: false` to disable list synchronization.
 1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
 1. Modify the configuration of your homepage `_config.yml`:
     1. `title`: the title of your homepage

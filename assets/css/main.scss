@@ -133,7 +133,59 @@ body {
     }
 }
 
+.paper-box[hidden], .publication-filters[hidden] {
+    display: none;
+}
+
+.publication-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .65rem;
+    margin: 0 0 1.25rem;
+
+    label {
+        margin: 0;
+        font-weight: 600;
+        color: $smu-blue;
+    }
+
+    select {
+        width: auto;
+        max-width: 100%;
+        margin: 0;
+        padding: .45rem 2rem .45rem .75rem;
+        border: 1px solid rgba(20, 28, 82, .18);
+        border-radius: 7px;
+        background-color: white;
+        color: $smu-blue;
+        font: inherit;
+        cursor: pointer;
+
+        &:focus-visible {
+            outline: 2px solid $smu-gold;
+            outline-offset: 2px;
+        }
+    }
+
+    #publication-count {
+        margin-left: auto;
+        color: $muted-text-color;
+        font-size: .85em;
+    }
+}
+
 $scroll_offset : 2em;
+.publication-details {
+    color: $muted-text-color;
+    font-size: .9em;
+}
+
+.scholar-paper .paper-box-text {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
 h1:before, .anchor:before { 
     content: ''; 
     display: block; 

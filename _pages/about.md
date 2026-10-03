@@ -38,6 +38,14 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href="https://
 
 
 # 📝 Publications 
+<div class="publication-filters" id="publication-filters" hidden>
+  <label for="publication-year">Year</label>
+  <select id="publication-year" aria-controls="scholar-publications">
+    <option value="all">All years</option>
+  </select>
+  <span id="publication-count" role="status" aria-live="polite" aria-atomic="true"></span>
+</div>
+<div id="scholar-publications"></div>
 <div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/level1_qa.png' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -46,7 +54,7 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href="https://
 
 <strong>Zhengyang Liang<sup>*</sup></strong>, Yan Shu<sup>*</sup>, Xiangrui Liu, Minghao Qin, Kaixin Liang, Paolo Rota, Nicu Sebe, Zheng Liu, Lizi Liao<sup>✉</sup>
 
-[**Paper**](https://arxiv.org/abs/2512.23044)|[**HomePage**](https://liang-zhengyang.github.io/video-browsecomp/)|[**Benchmark**](https://huggingface.co/datasets/chr1ce/Video-Browsecomp) <strong><span class='show_paper_citations' data-title='Video-BrowseComp: Benchmarking Agentic Video Research on Open Web'></span></strong>
+[**Paper**](https://arxiv.org/abs/2512.23044)|[**HomePage**](https://liang-zhengyang.github.io/video-browsecomp/)|[**Benchmark**](https://huggingface.co/datasets/chr1ce/Video-Browsecomp) <strong><span class='show_paper_citations' data-scholar-id='9IC8FBQAAAAJ:hqOjcs7Dif8C' data-title='Video-BrowseComp: Benchmarking Agentic Video Research on Open Web'></span></strong>
 </div>
 </div>
 

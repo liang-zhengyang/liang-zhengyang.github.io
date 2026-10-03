@@ -1,6 +1,12 @@
-name: Update Google Scholar citations
+name: Update Google Scholar publications and citations
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "google_scholar_crawler/**"
+      - ".github/workflows/google_scholar_crawler.yaml"
   workflow_dispatch:
   schedule:
     - cron: "0 8 * * *"
@@ -35,11 +41,14 @@ jobs:
             echo "Using SerpApi; no third-party Python packages are required."
           fi
 
-      - name: Fetch citation data
+      - name: Fetch publications and citation data
         env:
           GOOGLE_SCHOLAR_ID: "9IC8FBQAAAAJ"
           SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: python google_scholar_crawler/main.py
+
+      - name: Validate publication payload
+        run: python -m unittest discover -s google_scholar_crawler
 
       - name: Publish citation data branch
         working-directory: google-scholar-stats

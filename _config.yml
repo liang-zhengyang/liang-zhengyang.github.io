@@ -10,6 +10,7 @@ title                    : "Zhengyang Liang|梁正阳"
 description              : "Zhengyang Liang's Homepage|梁正阳的主页"
 repository               : "liang-zhengyang/liang-zhengyang.github.io"
 google_scholar_stats_use_cdn : true
+google_scholar_publications_auto_update : true
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/

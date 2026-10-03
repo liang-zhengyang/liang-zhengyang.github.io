@@ -37,8 +37,11 @@ AcadHomepage
 1. Fork本仓库到`USERNAME/USERNAME.github.io`，其中`USERNAME`是你的github用户名。
 1. 配置谷歌学术引用爬虫：
     1. 在你的谷歌学术引用页面的url里找到你的谷歌学术ID：例如，在url https://scholar.google.com/citations?user=SCHOLAR_ID 中，`SCHOLAR_ID`部分即为你的谷歌学术ID。
-    1. 在github本仓库页面的`Settings -> Secrets -> Actions -> New repository secret`中，添加`GOOGLE_SCHOLAR_ID`变量：`name=GOOGLE_SCHOLAR_ID`、`value=SCHOLAR_ID`。
-    1. 在github本仓库页面的`Action`中，点击*"I understand my workflows, go ahead and enable them"*启用workflows by clicking *"。本action将会谷歌学术引用的统计量数据`gs_data.json`到本仓库的`google-scholar-stats`分支中。每次修改main分支的内容会触发该action。本action也会在每天08:00 UTC定时触发。
+    1. 将 `.github/workflows/google_scholar_crawler.yaml` 的 `GOOGLE_SCHOLAR_ID` 设为你的谷歌学术 ID，并确保与 `_config.yml` 中 Scholar 链接的账号一致。
+    1. 在 GitHub 仓库的 `Actions` 中启用工作流。`Update Google Scholar publications and citations` 每天 08:00 UTC（新加坡/北京时间 16:00）运行，也可以用 `Run workflow` 手动运行。它将论文和引用统计写入 `google-scholar-stats` 分支；向 main 推送爬虫或该工作流的修改也会触发抓取。
+    1. 本站已配置 Scholar ID `9IC8FBQAAAAJ`。如需更换账号，同时修改 `_config.yml` 中的 Scholar 链接和工作流中的 `GOOGLE_SCHOLAR_ID`。可在仓库 Actions secrets 中设置 `SERPAPI_KEY`，工作流会优先使用 SerpApi；未设置时使用 scholarly 抓取。
+    1. `_config.yml` 的 `google_scholar_publications_auto_update: true` 开启论文列表同步：更新已匹配论文的标题、发表信息和引用数，自动添加 Scholar 上的新论文，并按年份降序排列。论文 ID 优先于标题用于匹配，因此改名也不会重复添加。现有卡片的配图、完整作者及贡献标记、会议徽标和项目资源链接保留；新增论文使用 Scholar 的作者和发表信息，以及 Scholar 详情链接。配图和代码等资源仍需手工补充。
+    1. 页面保留手工论文作为静态回退，抓取或加载失败不会清空列表。未匹配到的手工论文仍保留。新论文列表需要第一次新版工作流成功运行后出现；旧 JSON 仍可更新引用数。关闭自动列表更新可将 `google_scholar_publications_auto_update` 设为 `false`。
 1. 使用 [favicon-generator](https://redketchup.io/favicon-generator)生成favicon（网页icon文件），并下载所有文件到`REPO/images`。
 1. 修改主页配置文件[_config.yml](../_config.yml):
     1. `title`: 主页标题
