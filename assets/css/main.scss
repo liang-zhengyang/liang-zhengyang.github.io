@@ -117,24 +117,79 @@ body {
         justify-content: left;
         display: flex;
         width: 200px;
+        flex: 0 0 200px;
         margin-right: 1em;
         order: 1;
         img {
-            height: 150px; /* Adjust as needed for desired consistent height */
-            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
             border-radius: 7px;
         }
     }
     
     .paper-box-text{
         justify-content: left;
-        flex-grow: 1;
+        flex: 1 1 0;
+        min-width: 0;
         order: 2;
     }
 }
 
 .paper-box[hidden], .publication-filters[hidden] {
     display: none;
+}
+
+.publication-scroll {
+    max-height: 720px;
+    max-height: unquote("min(720px, 75vh)");
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: $smu-gold transparent;
+    padding: .25rem .75rem .25rem .25rem;
+    border-radius: 10px;
+
+    &:focus-visible {
+        outline: 2px solid $smu-gold;
+        outline-offset: 3px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $smu-gold;
+        border-radius: 8px;
+    }
+
+    .paper-box:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.paper-placeholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #f1f2f8, #faf8f3);
+    color: $smu-blue;
+    text-align: center;
+
+    .paper-placeholder-title {
+        font-size: 1.15em;
+        font-weight: 700;
+    }
+
+    .paper-placeholder-year {
+        color: $smu-gold;
+        font-size: .9em;
+    }
 }
 
 .publication-filters {
@@ -208,8 +263,20 @@ h1:before, .anchor:before {
 }
 
 .paper-box-image img {
-    height: 150px;
-    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.paper-image-container .badge {
+    top: .5rem;
+    left: 0;
+    z-index: 1;
+    max-width: 100%;
+    margin: 0;
+    padding: .2rem .65rem;
+    border-radius: 0 6px 6px 0;
 }
 
 .page-footer-meta {
@@ -257,14 +324,23 @@ h1:before, .anchor:before {
 
         .paper-box-image {
             width: 100%;
+            flex: none;
             margin: 0 0 1rem;
 
             img {
                 width: 100%;
                 max-width: 100%;
-                height: auto;
-                max-height: 220px;
+                height: 100%;
+            }
+
+            .paper-image-container {
+                max-width: 320px;
+                margin: 0 auto;
             }
         }
+    }
+
+    .publication-scroll {
+        max-height: 70vh;
     }
 }

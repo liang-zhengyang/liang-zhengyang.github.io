@@ -9,6 +9,8 @@
   data-url="{{ scholarDataUrl }}"
   data-fallback-url="https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json"
   data-profile-url="{{ site.author.googlescholar | escape }}"
+  data-paper-media="{{ site.data.publication_media | jsonify | escape }}"
+  data-image-base-url="{{ '/images/' | relative_url }}"
   data-auto-publications="{{ site.google_scholar_publications_auto_update }}"
   defer
 ></script>

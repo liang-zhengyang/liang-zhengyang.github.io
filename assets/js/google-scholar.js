@@ -21,6 +21,7 @@
   };
   const profileUrl = safeUrl(settings.dataset.profileUrl);
   const profileId = profileUrl ? new URL(profileUrl).searchParams.get("user") : null;
+  const mediaById = JSON.parse(settings.dataset.paperMedia || "{}") || {};
 
   function collectPublicationCards() {
     const container = document.getElementById("scholar-publications");
@@ -56,6 +57,7 @@
     });
     const count = document.getElementById("publication-count");
     if (count) count.textContent = `${visible} of ${cards.length} publications`;
+    container.scrollTop = 0;
   }
 
   function refreshYearFilter() {
@@ -118,13 +120,56 @@
     });
   }
 
+  function createThumbnail(paper) {
+    const media = mediaById[paper.author_pub_id] || {};
+    const label = media.label || paper.title.split(":")[0];
+    const imageColumn = document.createElement("div");
+    imageColumn.className = "paper-box-image";
+    const frame = document.createElement("div");
+    frame.className = "paper-image-container";
+    const badge = document.createElement("div");
+    badge.className = "badge";
+    badge.textContent = media.badge || "Paper";
+    frame.appendChild(badge);
+    const showCover = () => {
+      frame.classList.add("paper-placeholder");
+      const title = document.createElement("span");
+      title.className = "paper-placeholder-title";
+      title.textContent = label;
+      frame.appendChild(title);
+      if (yearOf(paper.year)) {
+        const year = document.createElement("span");
+        year.className = "paper-placeholder-year";
+        year.textContent = paper.year;
+        frame.appendChild(year);
+      }
+    };
+    if (media.image && /^[a-z0-9_-]+\.(png|jpe?g|webp)$/i.test(media.image)) {
+      const image = document.createElement("img");
+      image.src = `${settings.dataset.imageBaseUrl || "/images/"}${media.image}`;
+      image.alt = `${label}: overview figure`;
+      image.loading = "lazy";
+      image.addEventListener("error", () => {
+        image.remove();
+        showCover();
+      }, { once: true });
+      frame.appendChild(image);
+    } else {
+      showCover();
+    }
+    imageColumn.appendChild(frame);
+    return imageColumn;
+  }
+
   function createCard(paper) {
     const card = document.createElement("div");
     card.className = "paper-box scholar-paper";
+    card.appendChild(createThumbnail(paper));
+    const media = mediaById[paper.author_pub_id] || {};
     const text = document.createElement("div");
     text.className = "paper-box-text";
     const title = document.createElement("p");
-    addLink(title, paper.title, safeUrl(paper.url) || paper.scholar_url || profileUrl);
+    addLink(title, paper.title, safeUrl(media.paper_url) || safeUrl(paper.url) || paper.scholar_url || profileUrl);
     if (!title.firstChild) title.textContent = paper.title;
     text.appendChild(title);
     if (paper.authors) {
@@ -134,6 +179,10 @@
       text.appendChild(authors);
     }
     const links = document.createElement("p");
+    if (safeUrl(media.paper_url)) {
+      addLink(links, "Paper", media.paper_url);
+      links.appendChild(document.createTextNode(" | "));
+    }
     addLink(links, "Google Scholar", paper.scholar_url || profileUrl);
     const citations = document.createElement("span");
     citations.className = "show_paper_citations";

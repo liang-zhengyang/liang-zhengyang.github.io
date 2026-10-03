@@ -45,7 +45,7 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href="https://
   </select>
   <span id="publication-count" role="status" aria-live="polite" aria-atomic="true"></span>
 </div>
-<div id="scholar-publications"></div>
+<div id="scholar-publications" class="publication-scroll" tabindex="0" role="region" aria-label="Publications, scroll to browse"></div>
 <div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/level1_qa.png' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 

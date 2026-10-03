@@ -42,6 +42,7 @@ AcadHomepage
     1. 本站已配置 Scholar ID `9IC8FBQAAAAJ`。如需更换账号，同时修改 `_config.yml` 中的 Scholar 链接和工作流中的 `GOOGLE_SCHOLAR_ID`。可在仓库 Actions secrets 中设置 `SERPAPI_KEY`，工作流会优先使用 SerpApi；未设置时使用 scholarly 抓取。
     1. `_config.yml` 的 `google_scholar_publications_auto_update: true` 开启论文列表同步：更新已匹配论文的标题、发表信息和引用数，自动添加 Scholar 上的新论文，并按年份降序排列。论文 ID 优先于标题用于匹配，因此改名也不会重复添加。现有卡片的配图、完整作者及贡献标记、会议徽标和项目资源链接保留；新增论文使用 Scholar 的作者和发表信息，以及 Scholar 详情链接。配图和代码等资源仍需手工补充。
     1. 页面保留手工论文作为静态回退，抓取或加载失败不会清空列表。未匹配到的手工论文仍保留。新论文列表需要第一次新版工作流成功运行后出现；旧 JSON 仍可更新引用数。关闭自动列表更新可将 `google_scholar_publications_auto_update` 设为 `false`。
+    1. Publications 列表支持区域内滚轮、触控及键盘滚动，年份筛选保留在列表上方，切换年份时滚动位置重置到顶部。`_data/publication_media.json` 可按 Scholar 论文 ID 配置本地图片和论文链接；没有配图时使用同尺寸封面。缩略图统一为 4:3，完整显示原图。
 1. 使用 [favicon-generator](https://redketchup.io/favicon-generator)生成favicon（网页icon文件），并下载所有文件到`REPO/images`。
 1. 修改主页配置文件[_config.yml](../_config.yml):
     1. `title`: 主页标题

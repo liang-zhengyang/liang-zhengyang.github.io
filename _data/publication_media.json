@@ -1,0 +1,28 @@
+{
+  "9IC8FBQAAAAJ:Se3iqnhoufwC": {
+    "label": "VideoCreator",
+    "badge": "ICMR 2026",
+    "paper_url": "https://doi.org/10.1145/3805622.3810431"
+  },
+  "9IC8FBQAAAAJ:roLk4NBRz8UC": {
+    "label": "DyCo-RL",
+    "badge": "arXiv",
+    "image": "dyco-rl.png",
+    "image_source": "https://arxiv.org/html/2606.08035v2/pipeline.png",
+    "paper_url": "https://arxiv.org/abs/2606.08035"
+  },
+  "9IC8FBQAAAAJ:ufrVoPGSRksC": {
+    "label": "DeepXiv-SDK",
+    "badge": "arXiv",
+    "image": "deepxiv-sdk.png",
+    "image_source": "https://arxiv.org/html/2603.00084v2/framework.png",
+    "paper_url": "https://arxiv.org/abs/2603.00084"
+  },
+  "9IC8FBQAAAAJ:IjCSPb-OGe4C": {
+    "label": "MomentSeeker",
+    "badge": "NeurIPS 2025",
+    "image": "momentseeker.png",
+    "image_source": "https://arxiv.org/html/2502.12558v5/intra_demo.png",
+    "paper_url": "https://arxiv.org/abs/2502.12558"
+  }
+}
