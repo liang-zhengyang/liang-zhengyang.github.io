@@ -26,6 +26,7 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href="https://
 
 
 # 🔥 News
+- *2026.11*: &nbsp;🎉🎉 New paper [ManimCode](https://liang-zhengyang.github.io/manimcode/): a single 4B model that writes, reviews, and revises educational animations, trained on 24,034 render-verified revision trajectories.
 - *2025.12*: &nbsp;🎉🎉 We have launched the first open-web video search benchmark: [Video-Browsecomp](https://liang-zhengyang.github.io/video-browsecomp/).
 - *2025.11*: &nbsp;🎉🎉 We released UniVA, an open-source universal video agent. Try it on [UniVA](https://univa.online).
 - *2025.07*: &nbsp;🎉🎉 One paper accepted by ACMMM 2025.
@@ -46,6 +47,18 @@ My research interest includes MLLM, Video LLM and Video Agent. <a href="https://
   <span id="publication-count" role="status" aria-live="polite" aria-atomic="true"></span>
 </div>
 <div id="scholar-publications" class="publication-scroll" tabindex="0" role="region" aria-label="Publications, scroll to browse"></div>
+{% assign manimcode = site.data.manimcode.links %}
+<div class='paper-box' data-scholar-year='2026'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">{% if manimcode.arxiv_id != "" %}Arxiv{% else %}Preprint{% endif %}</div><img src='images/manimcode.jpg' alt="ManimCode" width="200px" height="150px"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[ManimCode: Learning Visual Self-Correction for Educational Animation](https://liang-zhengyang.github.io/manimcode/)
+
+<strong>Zhengyang Liang</strong>, Lizi Liao
+
+[**Paper**]({% if manimcode.arxiv_id != "" %}https://arxiv.org/abs/{{ manimcode.arxiv_id }}{% else %}{{ manimcode.pdf }}{% endif %})|[**HomePage**](https://liang-zhengyang.github.io/manimcode/){% if manimcode.code != "" %}|[**Code**]({{ manimcode.code }}){% endif %}{% if manimcode.dataset != "" %}|[**Dataset**]({{ manimcode.dataset }}){% endif %} <strong><span class='show_paper_citations' data-scholar-id='' data-title='ManimCode: Learning Visual Self-Correction for Educational Animation'></span></strong>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div class="paper-image-container"><div class="badge">Arxiv</div><img src='images/level1_qa.png' alt="sym" width="200px" height="150px"></div></div>
 <div class='paper-box-text' markdown="1">
 

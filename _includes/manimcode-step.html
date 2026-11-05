@@ -1,0 +1,50 @@
+{% comment %}One revision step on /manimcode/: before, feedback and edit, after. Usage: include manimcode-step.html step=...{% endcomment %}
+{% assign s = include.step %}
+<figure class="rev" data-play>
+  <figcaption class="rev-head">
+    <div class="rev-meta">
+      <span class="rev-tag rev-tag--{{ s.kind }}">{{ s.tag | escape }}</span>
+      <span class="rev-domain">{{ s.domain | escape }}</span>
+      <button type="button" class="pp" aria-label="Pause"></button>
+    </div>
+    <p class="rev-request"><span>Request</span> {{ s.request | escape }}</p>
+  </figcaption>
+  <div class="rev-grid">
+    <div class="pane">
+      <div class="pane-head"><strong>Before</strong><span>version {{ s.before.version }}</span></div>
+      {% if s.before.crash %}
+      <div class="crash" role="img" aria-label="The program crashes before rendering: {{ s.before.crash_error | escape }}">
+        {% for line in s.before.crash %}<div>{{ line | escape }}</div>{% endfor %}
+        <div class="crash-err">{{ s.before.crash_error | escape }}</div>
+      </div>
+      <p class="score">No video: the program crashes.</p>
+      {% else %}
+      <div class="frame">
+        <video muted loop playsinline preload="none" poster="/assets/manimcode/poster/{{ s.id }}_before.jpg" src="/assets/manimcode/video/{{ s.id }}_before.mp4" aria-label="Video before the revision: {{ s.request | escape }}"></video>
+        {% for b in s.before.boxes %}<span class="box box--bad" style="left:{{ b.x }}%;top:{{ b.y }}%;width:{{ b.w }}%;height:{{ b.h }}%" data-from="{{ b.from }}">{% if b.label %}<em>{{ b.label | escape }}</em>{% endif %}</span>{% endfor %}
+      </div>
+      <p class="score">Reviewer {{ s.before.reviewer }} · Gemini {{ s.before.gemini }}</p>
+      {% endif %}
+    </div>
+    <div class="pane pane--mid">
+      <div class="pane-head"><strong>Feedback → edit</strong></div>
+      <div class="note">
+        <h4>{{ s.source | escape }}</h4>
+        <blockquote>“{{ s.feedback | escape }}”</blockquote>
+      </div>
+      <div class="note">
+        <h4>Reviser edit (4B)</h4>
+        <div class="diff">{% for d in s.diff %}<div class="{% if d.sign == '+' %}add{% else %}del{% endif %}"><code>{{ d.sign }} {{ d.code | escape }}</code></div>{% endfor %}</div>
+      </div>
+    </div>
+    <div class="pane">
+      <div class="pane-head"><strong>After</strong><span>version {{ s.after.version }}</span></div>
+      <div class="frame">
+        <video muted loop playsinline preload="none" poster="/assets/manimcode/poster/{{ s.id }}_after.jpg" src="/assets/manimcode/video/{{ s.id }}_after.mp4" aria-label="Video after the revision: {{ s.request | escape }}"></video>
+        {% for b in s.after.boxes %}<span class="box box--{{ b.kind | default: 'good' }}" style="left:{{ b.x }}%;top:{{ b.y }}%;width:{{ b.w }}%;height:{{ b.h }}%" data-from="{{ b.from }}">{% if b.label %}<em>{{ b.label | escape }}</em>{% endif %}</span>{% endfor %}
+      </div>
+      <p class="score">Reviewer {{ s.after.reviewer }} · Gemini {{ s.after.gemini }}{% if s.after.delta %} <b class="delta delta--{{ s.after.delta_kind | default: s.kind }}">({{ s.after.delta }})</b>{% endif %}{% if s.after.note %}<br><i>{{ s.after.note | escape }}</i>{% endif %}</p>
+    </div>
+  </div>
+  {% if s.remark %}<p class="rev-remark">{{ s.remark | escape }}</p>{% endif %}
+</figure>

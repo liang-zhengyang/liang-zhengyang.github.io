@@ -1,0 +1,170 @@
+# Content for /manimcode/ and its card on the homepage.
+#
+# When a resource goes public, fill in its value here and push. The header buttons,
+# resource cards, BibTeX entry, and homepage card all read from these four keys;
+# an empty value shows "Coming soon" (or hides the homepage link).
+links:
+  arxiv_id: ""                     # e.g. "2611.01234"
+  pdf: "/files/manimcode.pdf"
+  code: ""                         # e.g. "https://github.com/<owner>/ManimCode"
+  dataset: ""                      # e.g. "https://huggingface.co/datasets/<owner>/ManimData"
+
+# Revision steps of the main system on ManimData-test. Requests, critiques, edits, boxes, and
+# scores match the qualitative figures in the paper (Fig. 5 and the appendix figure).
+# Box x/y/w/h are percentages of the frame; "from" is the fraction of the video after which
+# the defect or repair is on screen, so a box only appears while its region is visible.
+hero:
+  id: p005190_5
+  kind: ok
+  tag: Layout repaired
+  domain: CS algorithms
+  request: "Display a table of transition rules for a simple machine, then highlight the row corresponding to the current state and scanned symbol, showing the next state and action."
+  source: Reviewer critique (4B)
+  feedback: "The main title 'Transition Rules' overlaps with the top row of the table, making both the title and the 'Rule' column header partially illegible."
+  diff:
+    - { sign: "-", code: "table.scale(0.75).to_edge(UP, buff=0.5)" }
+    - { sign: "+", code: "table.scale(0.75).to_edge(UP, buff=1.0)" }
+    - { sign: "-", code: "….next_to(row_highlight, DOWN, buff=0.2)" }
+    - { sign: "+", code: "current_label.next_to(table, DOWN, buff=0.5)" }
+  before:
+    version: 5
+    reviewer: "3.25"
+    gemini: "3.25"
+    boxes:
+      - { x: 34, y: 2, w: 31, h: 12, from: 0.16 }
+      - { x: 40, y: 27, w: 19, h: 8, from: 0.55 }
+  after:
+    version: 6
+    reviewer: "4.75"
+    gemini: "3.88"
+    delta: "+0.63"
+    note: kept as the final video
+    boxes:
+      - { x: 34, y: 3, w: 31, h: 11, from: 0.16 }
+      - { x: 40, y: 60, w: 19, h: 8, from: 0.6 }
+
+revisions:
+  - id: p005892_1
+    kind: ok
+    tag: Crash repaired
+    domain: Graph theory
+    request: "Draw a graph with five vertices labeled A through E and connect them with directed edges. Next to the graph, display a vertical list of these vertices, each followed by an empty bracket placeholder."
+    source: Renderer error
+    feedback: "NameError: name 'Braces' is not defined (line 33)."
+    diff:
+      - { sign: "-", code: "bracket = Braces(label, color=YELLOW, …)" }
+      - { sign: "+", code: "bracket = Brace(label, color=YELLOW, …)" }
+    before:
+      version: 1
+      crash:
+        - "bracket = Braces(label, color=YELLOW,"
+        - "                 buff=0.15)"
+      crash_error: "NameError: name 'Braces' is not defined"
+    after:
+      version: 2
+      reviewer: "4.00"
+      gemini: "3.62"
+      note: renders
+  - id: p004454_3
+    kind: ok
+    tag: Layout repaired
+    domain: Number theory
+    request: "Display the equation 2^x ≡ 3 (mod 13). Transform it step-by-step to show the calculation of the discrete log base 2 of 3, emphasizing the result x=4 and the modulo reduction of 16 to 3."
+    source: Reviewer critique (4B)
+    feedback: "The final conclusion text overlaps with the 'x = 4' result, making both partially illegible."
+    diff:
+      - { sign: "-", code: "result.next_to(eq1, DOWN, buff=0.6)" }
+      - { sign: "-", code: "result.shift(RIGHT * 2.8)" }
+      - { sign: "+", code: "result.next_to(powers, DOWN, buff=0.5)" }
+    before:
+      version: 3
+      reviewer: "3.75"
+      gemini: "3.38"
+      boxes:
+        - { x: 40, y: 20, w: 40, h: 10, from: 0.86, label: overlap }
+    after:
+      version: 4
+      reviewer: "4.75"
+      gemini: "3.88"
+      delta: "+0.50"
+      boxes:
+        - { x: 41, y: 53, w: 18, h: 11, from: 0.86 }
+  - id: p005602_5
+    kind: ok
+    tag: Content corrected
+    domain: CS algorithms
+    request: "Display a weighted graph with five nodes, animate the selection of a maximum weight clique by sequentially highlighting the highest-weight connected subset, and show the sum of their weights."
+    source: Reviewer critique (4B)
+    feedback: "The sum label is mathematically incorrect. The code calculates the sum of the clique {B, C, D} as 3+4+2=9, but the final explanation text claims the sum is 11."
+    diff:
+      - { sign: "-", code: 'Text("… {B, C, D} with sum 11", …)' }
+      - { sign: "+", code: 'Text("… {B, C, D} with sum 9", …)' }
+    before:
+      version: 5
+      reviewer: "3.00"
+      gemini: "3.00"
+      boxes:
+        - { x: 19, y: 84, w: 62, h: 10, from: 0.88, label: wrong sum }
+    after:
+      version: 6
+      reviewer: "4.00"
+      gemini: "3.00"
+      delta: "+0.00"
+      delta_kind: flat
+      note: kept as the final video
+      boxes:
+        - { x: 19, y: 84, w: 62, h: 10, from: 0.88 }
+    remark: "The sum is fixed, but the judge scores both versions 3.00. Among the steps in the paper's figures, this is the only one where the judge's score does not move with the Reviewer's."
+  - id: p004752_8
+    kind: bad
+    tag: Regression, not kept
+    domain: CS algorithms
+    request: "Display a sample rule 'Bread => Butter' with a progress bar filling to 80% confidence, then highlight the transaction set where both items co-occur to demonstrate the rule's strength."
+    source: Reviewer critique (4B)
+    feedback: "The transaction grid is positioned too low, causing the bottom-most box ('Cheese Bread') to be clipped by the bottom edge of the frame."
+    diff:
+      - { sign: "-", code: "grid.move_to(DOWN * 2.5)" }
+      - { sign: "+", code: "grid.move_to(DOWN * 1.5)" }
+    before:
+      version: 8
+      reviewer: "3.50"
+      gemini: "3.00"
+      boxes:
+        - { x: 37, y: 86, w: 26, h: 13.5, from: 0.5, label: cut off }
+    after:
+      version: 9
+      reviewer: "2.00"
+      gemini: "2.58"
+      delta: "−0.42"
+      note: scored lower; the previous version is kept
+      boxes:
+        - { x: 29, y: 25, w: 42, h: 13, from: 0.5, label: new overlap, kind: warn }
+    remark: "Revisions can fail. Moving the list back up restores an overlap with the progress bar. The Reviewer scores this version lower, so the loop keeps version 8, even though its list is still cut off. Keeping the best candidate stops a regression from replacing a better version, but it cannot repair a defect the Reviser leaves behind."
+
+# Final videos from the main-system run on ManimData-test, picked by hand for range.
+# Each scored 3.75 on the 1-5 VQ scale, the same Gemini 3.8 Flash scores as the paper's main table.
+gallery:
+  - id: p005801
+    topic: Hopf fibration
+    domain: Geometry
+    request: "Draw a 3D coordinate grid, sweep a parameter to generate a torus representing the preimage of an equator, then highlight a specific circle on the torus transforming into a point on the target sphere."
+  - id: p005347
+    topic: Chirp
+    domain: Engineering
+    request: "Plot the time-domain waveform of a linear up-chirp signal x(t)=cos(2π(f0t + 0.5μt²)) from t=0 to 2 seconds, highlighting the increasing oscillation density as time progresses."
+  - id: p004862
+    topic: Multimodal distribution
+    domain: Probability and statistics
+    request: "Plot a bimodal density curve with peaks at x=2 and x=8 on axes -5 to 15; highlight the two local maxima with red dots and label them 'Mode 1' and 'Mode 2'."
+  - id: p004512
+    topic: Drude model
+    domain: Physics
+    request: "Plot current density J versus electric field E as a straight line, overlay the microscopic equation J = -ne^2tau/m E, and highlight the slope representing conductivity."
+  - id: p005843
+    topic: Radius of convergence
+    domain: Calculus
+    request: "Draw a number line centered at 0. Animate a power series sum converging for x in (-1, 1) with dots appearing, then diverging outside. Highlight the interval and label radius R=1."
+  - id: p005351
+    topic: Multiset
+    domain: Discrete mathematics
+    request: "Draw a standard set {1, 2, 3} next to a multiset {1, 1, 2, 3, 3}, highlighting the repeated elements in the multiset with colored boxes to show multiplicity."
