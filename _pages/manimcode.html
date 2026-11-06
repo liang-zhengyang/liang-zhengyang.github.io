@@ -545,7 +545,9 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   author = {Liang, Zhengyang and Liao, Lizi},
   year   = {2026}{% if links.arxiv_id != "" %},
   {{ bib_eprint }}
-  archivePrefix = {arXiv}{% else %},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV},
+  url    = {https://arxiv.org/abs/{{ links.arxiv_id }}}{% else %},
   note   = {Project page: https://liang-zhengyang.github.io/manimcode/}{% endif %}
 }</pre>
     </div>

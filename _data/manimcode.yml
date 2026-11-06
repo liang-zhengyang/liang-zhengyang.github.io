@@ -4,7 +4,7 @@
 # resource cards, BibTeX entry, and homepage card all read from these four keys;
 # an empty value shows "Coming soon" (or hides the homepage link).
 links:
-  arxiv_id: ""                     # e.g. "2611.01234"
+  arxiv_id: "2611.08294"
   pdf: "/files/manimcode.pdf"
   code: ""                         # e.g. "https://github.com/<owner>/ManimCode"
   dataset: ""                      # e.g. "https://huggingface.co/datasets/<owner>/ManimData"
